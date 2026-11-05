@@ -1,26 +1,32 @@
-# 韩景宸 (Han Jingchen) / Hin Sothun | Accounting, Excel & Operations Portfolio
+# 韩景宸 (Han Jingchen) / Hin Sothun | Professional Portfolio
 
-A responsive portfolio website featuring accounting support, Excel practice projects, payment-operations and team-coordination experience. English and Simplified Chinese content.
+An updated bilingual (English / 简体中文) professional website. It preserves the original Accounting & Excel, Payment Operations and Video Editing sections, with a **new 3D Interior Concept Portfolio** tab.
 
-## GitHub Pages deployment
+## What is new
 
-1. Create a new **public** GitHub repository named `hin-sothun-portfolio`.
-2. Upload the contents of this folder to the repository **root**: `index.html`, `.nojekyll`, and the `files/` directory.
-3. Under **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then click **Save**.
-4. Find your real published URL in **Settings → Pages** once deployment succeeds. The URL typically follows `https://YOUR-GITHUB-USERNAME.github.io/hin-sothun-portfolio/`.
+- 10 clearly differentiated illustrative interior concept cards: condo, bedroom, kitchen, office, café, boutique, beauty salon, furniture showroom, studio, restaurant.
+- AI-generated concept images, presented transparently as *illustrative studies*, not as completed client projects or proof of original 3D modeling.
+- Individual concept detail views covering space planning, furniture, and materials.
+- A short moving-image concept slideshow MP4: **not a true 3D walkthrough**.
+- Interview talking points in English and Simplified Chinese.
+- Feedback form via `mailto:`; it requires an email application and does **not** store submissions in a database.
+- Responsive design including a visible Interior shortcut on mobile.
 
-## Contents
+## Update the EXISTING site (do not make a new repository)
 
-- `index.html` - the complete static website (English + Simplified Chinese).
-- `files/01_Cashbook.xlsx` - synthetic cashbook exercise.
-- `files/02_Accounts_Receivable.xlsx` - synthetic AR exercise.
-- `files/03_Accounts_Payable.xlsx` - synthetic AP exercise.
-- `files/04_Bank_Reconciliation.xlsx` - synthetic reconciliation exercise.
+1. Open: https://github.com/hinfelix2001/hin-sothun-portfolio
+2. Download the ZIP and extract it on your computer.
+3. In the existing GitHub repository, select **Add file -> Upload files**.
+4. Drag **all extracted contents** (not the ZIP file) including `index.html`, `assets/`, `files/`, `.nojekyll` and `README.md` to the upload box.
+5. GitHub may ask to overwrite or replace existing files; commit all changes to the `main` branch. Confirm `index.html` remains at repository root.
+6. GitHub Pages is already configured for `main` and `/(root)`. Once deployment completes, visit https://hinfelix2001.github.io/hin-sothun-portfolio/
 
-## Disclosure
+### Optional simpler update
 
-Excel examples use invented practice data and do not represent private customer records or verified employer transactions. The website links to the existing video editing portfolio and LinkedIn profile.
+Only `index.html` and the `assets/interior/` directory are new/changed relative to the previous portfolio. The original four Excel workbooks can stay unchanged if they're already correctly uploaded.
 
-## Display name
+## Accurate attribution
 
-The portfolio prominently shows 韩景宸 (Han Jingchen) as the Chinese professional name and retains Hin Sothun as the English/Khmer name. The live site will update only after publishing these files to GitHub Pages.
+Illustrative imagery originates from AI-generated draft concept visuals. Replace them with your personally created Blender, SketchUp, CAD, or rendering work once available. The website must not imply an employment track record in architecture/design unless supported by evidence.
+
+© 2026 Han Jingchen (韩景宸) / Hin Sothun.
