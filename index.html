@@ -1,412 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<meta name="theme-color" content="#091319"/>
-<meta name="description" content="Han Jingchen (韩景宸) | Hin Sothun. Portfolio: Accounting, Excel, Payment Operations, Video Editing and Interior Design Concept Studies (illustrative projects)."/>
-<title>韩景宸 | Han Jingchen · Hin Sothun | Accounting, Excel & Interior Concepts Portfolio</title>
-<style>
-:root{color-scheme:dark;--bg:#071115;--panel:#0c1c22;--panel2:#11252b;--text:#eff8f5;--muted:#94acae;--line:#264047;--lime:#c7f36d;--teal:#68d6c3;--warm:#ffca82;--radius:22px;--max:1170px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 70% 40% at 75% 0%,#16404a88,transparent 70%),var(--bg);color:var(--text);font:16px/1.58 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
-::selection{background:var(--lime);color:var(--bg)}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}p{margin:0}h1,h2,h3{margin:0;line-height:1.13;letter-spacing:-.04em}h1{font-size:clamp(3.3rem,7.1vw,6.4rem);max-width:850px}h2{font-size:clamp(2.4rem,4.4vw,4.3rem)}h3{font-size:1.4rem}small{font-size:.8rem}.wrap{width:min(calc(100% - 48px),var(--max));margin:auto}
-header{position:sticky;top:0;z-index:40;background:#071115eb;backdrop-filter:blur(16px);border-bottom:1px solid #183039}.nav{min-height:77px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{font-size:1rem;font-weight:900;letter-spacing:-.025em}.logo span{color:var(--lime)}.navlinks{display:flex;align-items:center;gap:27px}.navlinks a{color:#b4caca;font-size:.89rem;font-weight:650;transition:.2s}.navlinks a:hover{color:var(--lime)}.lang{border:1px solid var(--line);background:#14262b;color:var(--text);padding:10px 13px;border-radius:10px;font-size:.79rem;font-weight:800;min-width:72px}.lang:hover{border-color:var(--lime)}
-.eyebrow{color:var(--lime);text-transform:uppercase;font-size:.77rem;font-weight:800;letter-spacing:.19em}.hero{padding:110px 0 105px;position:relative}.hero-inner{display:grid;grid-template-columns:1.2fr .85fr;align-items:center;gap:68px}.hero h1{margin:21px 0 27px}.hero h1 em{font-style:normal;color:var(--lime)}.hero .lead{max-width:590px;color:#b3c8c7;font-size:1.075rem}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:33px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:12px;font-size:.88rem;font-weight:800;transition:transform .2s,border .2s,background .2s;border:1px solid var(--line)}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--lime);color:#13251c;border-color:var(--lime)}.btn.secondary{background:#102027;color:var(--text)}.btn.ghost{background:transparent}.btn .arrow{font-size:1.15rem}.hero-pills{display:flex;gap:11px;flex-wrap:wrap;margin-top:35px}.hero-pills span{border:1px solid #29434a;color:#c4d5d1;background:#112329;padding:6px 12px;border-radius:100px;font-size:.76rem}.side-panel{position:relative;background:linear-gradient(155deg,#152d32,#0b1b20);padding:20px;border:1px solid #3b5555;border-radius:26px;box-shadow:0 25px 60px #0008;transform:rotate(1deg)}.side-panel:after{content:"";position:absolute;inset:-12px;z-index:-1;border:1px solid #244b48;border-radius:32px;transform:rotate(-3deg)}.terminal-top{display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:#a9bebc;border-bottom:1px solid #30474b;padding:3px 0 17px}.dots{display:flex;gap:6px}.dots i{width:8px;height:8px;border-radius:50%;background:#689297;display:block}.dots i:first-child{background:#ffb28c}.dots i:nth-child(2){background:#ffdc89}.dots i:last-child{background:#9bcf9d}.sheet-head{display:flex;align-items:center;justify-content:space-between;margin-top:20px}.sheet-head strong{font-size:1.02rem}.sheet-head small{color:#8db3b1}.sheet-tag{font-size:.67rem;background:#254236;color:var(--lime);padding:5px 8px;border:1px solid #426e4a;border-radius:9px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.metric{padding:16px 11px;background:#173039;border:1px solid #2b484c;border-radius:13px;min-width:0}.metric span{display:block;font-size:.64rem;color:#9fb7b7;margin-bottom:6px}.metric b{font-size:1.25rem;letter-spacing:-.02em}.metric:nth-child(2) b{color:var(--lime)}.barrows{display:flex;align-items:end;gap:12px;height:124px;padding:9px 12px 0;background:#10242b;border:1px solid #2d4549;border-radius:12px}.barrows div{flex:1;background:linear-gradient(#99eacc,#356f72);border-radius:6px 6px 0 0;opacity:.86}.barrows div:nth-child(2n){background:linear-gradient(#d5f78d,#66893b)}.sheet-table{margin-top:15px;border:1px solid #30474b;border-radius:11px;overflow:hidden}.sheet-table .tr{display:grid;grid-template-columns:1fr 1fr .75fr;font-size:.67rem}.sheet-table .tr span{padding:9px 8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.sheet-table .tr:not(:last-child){border-bottom:1px solid #264049}.sheet-table .tr:first-child{background:#254047;color:#b9cbca;font-weight:700}.ok{color:var(--lime)}.pending{color:var(--warm)}
-.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0b1a1e}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding:24px 0}.trust-item{display:flex;align-items:center;gap:14px}.trust-item i{font-size:1.5rem;font-style:normal;color:var(--lime)}.trust-item strong{display:block;font-size:.89rem}.trust-item small{color:var(--muted)}
-section.block{padding:100px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:38px}.section-top p{color:var(--muted);max-width:460px}.section-top h2{max-width:670px;margin-top:16px}.filterbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}.filter{background:#0e2025;border:1px solid #27434b;border-radius:999px;padding:10px 19px;font-size:.81rem;color:#a9c3c0;font-weight:750}.filter:hover,.filter.active{background:var(--lime);color:#15291b;border-color:var(--lime)}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:21px}.card{position:relative;display:flex;flex-direction:column;border:1px solid #28454a;background:linear-gradient(150deg,#10272c,#0a1b20);border-radius:var(--radius);padding:26px;min-height:320px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#6c9692;box-shadow:0 12px 35px #0005}.card:before{content:"";position:absolute;right:-60px;top:-70px;width:200px;height:200px;background:radial-gradient(circle,#3f88774b,transparent 70%);pointer-events:none}.card-header{display:flex;justify-content:space-between;align-items:start;gap:15px}.card-icon{display:grid;place-items:center;height:54px;width:54px;border-radius:15px;background:#20493d;color:var(--lime);font-size:1.55rem;font-weight:800}.card-code{color:#799b9b;font-weight:800;font-size:.75rem;letter-spacing:.1em}.card h3{margin:23px 0 9px}.card p{color:#a9c3c1;font-size:.89rem;max-width:480px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.tag{border:1px solid #345358;border-radius:6px;padding:4px 8px;color:#a9c4bf;font-size:.66rem;font-weight:700}.card-footer{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:auto;padding-top:30px}.card-footer a,.card-footer button{border:0;background:transparent;color:var(--lime);font-weight:800;font-size:.82rem;padding:0;cursor:pointer}.card-footer a:hover,.card-footer button:hover{text-decoration:underline}.sep{width:3px;height:3px;background:#4d6b70;border-radius:50%}.disclaimer{color:#79979a;margin-top:17px;font-size:.78rem}
-.about-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#102126}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}.about p{color:#bdd0cd;margin:22px 0 0;max-width:570px}.details{display:grid;gap:12px}.detail{background:#142c30;border:1px solid #2a4a4b;border-radius:15px;padding:20px 22px}.detail .num{color:var(--lime);font-size:.75rem;letter-spacing:.1em;font-weight:800}.detail strong{display:block;margin:7px 0;font-size:1.09rem}.detail p{font-size:.84rem;color:#a1bdba}
-.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.workflow article{background:#102127;border:1px solid #24434a;padding:23px 20px;border-radius:15px}.workflow .n{font-size:2rem;color:#547b7c;font-weight:800;line-height:1}.workflow strong{display:block;margin:21px 0 9px}.workflow p{color:#9eb9b7;font-size:.82rem}
-.contact{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 30%,#346b4d50,transparent 40%),#0d2426;border-top:1px solid #2e4d4b}.contact h2{max-width:780px;margin-top:14px}.contact p{color:#b2cac6;max-width:620px;margin-top:18px}.contact .hero-actions{margin-top:29px}.footer{border-top:1px solid #254342;padding:21px 0;color:#8eaaa9;font-size:.76rem}.footin{display:flex;justify-content:space-between;gap:20px;align-items:center}.footin a{color:#c7f36d}
-.modal{border:1px solid #4a7470;background:#0d2025;color:var(--text);border-radius:19px;max-width:780px;width:calc(100% - 28px);padding:0;box-shadow:0 25px 100px #000b}.modal::backdrop{background:#010a0dde;backdrop-filter:blur(4px)}.modal-inner{padding:24px}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.modal-head p{color:var(--lime);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.11em}.modal-head h3{margin:9px 0 6px;font-size:1.65rem}.close{border:1px solid #44615d;color:white;background:#20373a;border-radius:10px;height:36px;width:38px;font-size:1.1rem}.preview-note{font-size:.8rem;color:#aac3be;margin:12px 0 18px}.table-scroll{overflow-x:auto;border:1px solid #395251;border-radius:10px}.preview-table{width:100%;min-width:560px;border-collapse:collapse;font-size:.76rem}.preview-table th{background:#24403e;color:#cff2e8;text-align:left}.preview-table td,.preview-table th{padding:12px 13px;border-bottom:1px solid #2d4a49}.preview-table tr:last-child td{border-bottom:0}.modal-actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
-@media(max-width:1050px){.hero-inner{grid-template-columns:1fr 1fr;gap:30px}.hero h1{font-size:clamp(3.2rem,6.4vw,5.4rem)}.navlinks{gap:15px}.workflow{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.wrap{width:min(calc(100% - 34px),var(--max))}.nav{min-height:68px}.navlinks{display:none}.hero{padding:68px 0 75px}.hero-inner,.about-grid{grid-template-columns:1fr;gap:48px}.hero h1{font-size:clamp(3.2rem,13vw,5.5rem)}.side-panel{transform:none;max-width:560px;margin:auto;width:100%}.trust-grid{grid-template-columns:1fr;gap:17px}.trust-item{align-items:flex-start}.section-top{display:block}.section-top p{margin-top:20px}.cards{grid-template-columns:1fr}.card{min-height:290px}.workflow{grid-template-columns:1fr 1fr}.footin{flex-direction:column;align-items:start}section.block{padding:75px 0}.section-top h2{margin-top:15px}}
-@media(max-width:760px){.side-panel:after{display:none}}
-@media(max-width:440px){.workflow{grid-template-columns:1fr}.metrics{gap:5px}.metric{padding:12px 7px}.metric b{font-size:1rem}.btn{width:100%}.hero-actions{display:grid;grid-template-columns:1fr}.card-footer{gap:14px}.side-panel{padding:13px}.hero-pills span{font-size:.72rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-/* Prominent bilingual professional name while retaining original legal name */
-.logo{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:1.04rem;letter-spacing:0}
-.logo .logo-divider{color:var(--lime);font-size:.88rem}
-.logo small{font-size:.70rem;color:#a5c9c1;letter-spacing:.10em;font-weight:750}
-.nameplate{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:16px;margin-bottom:4px}
-.nameplate .cn-name{font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:900;color:#f4fff6;letter-spacing:.08em}
-.nameplate .name-alt{font-size:.83rem;color:#a7c7c3;letter-spacing:.015em}
-@media(max-width:440px){.logo{gap:4px;font-size:.92rem}.logo small{font-size:.61rem}.nameplate{gap:5px 10px}.nameplate .name-alt{font-size:.76rem}}
-
-/* 2026 portfolio extension | Concept studies section */
-:root{--violet:#b58bff;--violet2:#7549cf}
-.interior-section{background:radial-gradient(ellipse 65% 30% at 15% 0,#432c6e52,transparent 75%),linear-gradient(175deg,#111422,#0a151b 85%);border-top:1px solid #494160;border-bottom:1px solid #494160}
-.interior-section .eyebrow,.interior-section .accent{color:var(--violet)}
-.interior-kicker{display:inline-flex;align-items:center;gap:7px;border:1px solid #755e9c;background:#2a2040;color:#e6d8ff;padding:8px 12px;border-radius:60px;font-size:.77rem;font-weight:700;margin-bottom:23px}
-.interior-head{display:flex;justify-content:space-between;gap:34px;align-items:end;margin-bottom:28px}
-.interior-head h2{max-width:690px}.interior-head p{max-width:470px;color:#c6bbd4;margin-top:16px}
-.interior-links{display:flex;gap:11px;flex-wrap:wrap;margin:26px 0 34px}
-.interior-links a{color:#f5effe;background:#271d3a;border:1px solid #695486;padding:10px 18px;border-radius:10px;font-size:.84rem;font-weight:750}
-.interior-links a:hover{border-color:#c6a6ff;background:#3b2957}
-.interior-proof{display:flex;align-items:start;gap:12px;background:#291f39;color:#e1d9ec;border:1px solid #6f548e;border-radius:14px;padding:14px 17px;margin-bottom:26px;font-size:.81rem}
-.interior-proof strong{color:#e8d1ff}
-.int-filters{display:flex;gap:9px;flex-wrap:wrap;margin:27px 0 21px}
-.int-filter{border-radius:70px;padding:10px 17px;border:1px solid #584e69;background:#161b29;color:#d3c7de;font-weight:750;font-size:.8rem}
-.int-filter[aria-pressed="true"],.int-filter:hover{background:var(--violet);color:#1e1430;border-color:var(--violet)}
-.int-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.int-card{background:#151924;border:1px solid #534661;overflow:hidden;border-radius:18px;transition:transform .2s,border .2s;display:flex;flex-direction:column}
-.int-card:hover{transform:translateY(-4px);border-color:#b58bff}
-.int-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#281f37}
-.int-card-body{padding:20px;flex:1;display:flex;flex-direction:column}
-.int-card-meta{color:#bca7d3;font-size:.71rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;margin-bottom:9px}
-.int-card h3{font-size:1.27rem;margin:0 0 10px;letter-spacing:-.025em}.int-card p{font-size:.81rem;color:#b5b4c5;line-height:1.52;flex:1}
-.int-card button{border:1px solid #856ab3;background:#37284f;color:#eedfff;border-radius:10px;padding:10px 14px;text-align:left;font-size:.8rem;font-weight:800;margin-top:18px}
-.int-card button:hover{background:#624494}
-.int-card[hidden]{display:none}
-.int-extras{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:21px;margin-top:28px}
-.int-box{background:#171c28;border:1px solid #4e4562;border-radius:19px;padding:24px}
-.int-box h3{font-size:1.3rem;margin-bottom:12px;color:#f4ebff}.int-box p{color:#c8c0d5;font-size:.86rem}
-.int-steps{padding-left:23px;margin:14px 0 0;color:#d2c7dc;font-size:.86rem}.int-steps li{margin-bottom:8px}
-.int-reel{width:100%;aspect-ratio:16/9;border-radius:13px;background:#0b0d15;margin-top:18px;display:block;border:1px solid #454057}
-.int-note{font-size:.76rem!important;color:#aa9fb8!important;margin-top:12px!important}
-.int-present{margin-top:20px;padding:19px;background:#211a30;border:1px solid #5c4b79;border-radius:14px}
-.int-present strong{color:#ead9ff}.int-present p{margin-top:8px}
-.int-feedback{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.int-feedback label{color:#c7bfda;font-size:.75rem;font-weight:750;display:block;margin-bottom:6px}
-.int-feedback input,.int-feedback textarea,.int-feedback select{display:block;width:100%;min-height:42px;border:1px solid #685578;border-radius:10px;background:#0e1520;color:#fff;padding:12px;font:inherit;outline-offset:2px}
-.int-feedback textarea{min-height:125px;resize:vertical}.int-feedback .full{grid-column:1/-1}
-.int-send{background:#b58bff!important;color:#190f28!important;border:0;border-radius:10px;padding:12px 18px;font-size:.85rem;font-weight:850;cursor:pointer}
-.int-mail{color:#d5c2e7!important;margin-top:12px!important}
-.interior-section .more-hint{margin-top:26px;text-align:center;color:#bfb3cb;font-size:.8rem}
-.int-dialog{width:min(730px,calc(100vw - 24px));max-height:90vh;overflow:auto;border:1px solid #9e78d8;border-radius:22px;background:#111621;color:#f5edff;padding:0;box-shadow:0 30px 100px #000b}
-.int-dialog::backdrop{background:#000d;backdrop-filter:blur(5px)}
-.int-dialog .inner{padding:24px}.int-dialog img{display:block;width:100%;max-height:330px;object-fit:cover;border-radius:12px;margin-top:16px}
-.int-dialog h3{font-size:1.7rem}.int-dialog p{color:#c5bbd6;margin-top:15px}.int-dialog .rowhead{display:flex;justify-content:space-between;align-items:start;gap:10px}
-.int-dialog .x{flex:0 0 auto;border:1px solid #665877;background:#342b43;color:white;border-radius:9px;padding:8px 14px}
-.int-dialog dl{display:grid;gap:13px;margin:18px 0 4px}.int-dialog dt{font-size:.75rem;color:#c9a7ff;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.int-dialog dd{margin:3px 0;color:#e6dfeb;font-size:.91rem}
-#mobileInterior{display:none}
-@media(max-width:1020px){.int-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.int-extras{grid-template-columns:1fr}}
-@media(max-width:760px){#mobileInterior{display:block;padding:12px 17px;background:#271e35;border-bottom:1px solid #5f4e76;color:#dac4fb;font-weight:850;font-size:.8rem;text-align:center}.interior-head{display:block}.interior-head p{margin-top:18px}}
-@media(max-width:560px){.int-grid{grid-template-columns:1fr}.int-feedback{grid-template-columns:1fr}.int-feedback .full{grid-column:auto}.int-card-body{padding:16px}.int-box{padding:18px}}
-
-/* === Version 3: Professional motion design; no external animation libraries === */
-html { scroll-padding-top: 92px; }
-body { -webkit-font-smoothing: antialiased; }
-/* Small page reading progress line beneath navigation */
-.reading-progress {
- position: fixed; top: 0; left: 0; z-index: 100;
- width: 0; height: 3px; pointer-events: none;
- background: linear-gradient(90deg, var(--teal), var(--lime), #b3d2ff);
- box-shadow: 0 0 12px #b8ec7d55;
- transition: width .12s linear;
-}
-/* Enter smoothly after Javascript initializes; show content normally if JS is off. */
-html.motion-ready .motion-reveal {
- opacity: 0; transform: translate3d(0,25px,0);
- transition: opacity .72s ease, transform .82s cubic-bezier(.22,1,.36,1);
- transition-delay: var(--motion-delay,0ms);
-}
-html.motion-ready .motion-reveal.motion-visible {
- opacity: 1; transform: translate3d(0,0,0);
-}
-html.motion-ready .card.motion-reveal.motion-visible:hover,
-html.motion-ready .int-card.motion-reveal.motion-visible:hover {
- transform:translate3d(0,-6px,0);
-}
-/* Header and title */
-header { transition: background .3s ease, box-shadow .3s ease; }
-header.is-scrolled { background: #071115f5; box-shadow: 0 9px 34px #0005; }
-.navlinks a {position: relative; padding: 6px 0;}
-.navlinks a::after {
- content:''; position:absolute; left:0; bottom:0; width:100%; height:2px;
- border-radius:3px; background:var(--lime);
- transform:scaleX(0); transform-origin:left; transition:transform .3s ease;
-}
-.navlinks a:hover::after, .navlinks a:focus-visible::after, .navlinks a[aria-current='location']::after {transform:scaleX(1)}
-.logo {transition: letter-spacing .3s ease, text-shadow .3s ease;}
-.logo:hover {letter-spacing:.005em;text-shadow:0 0 18px #c7f36d40}
-.hero { isolation: isolate; }
-.hero::before {
- content:''; position:absolute; width:min(50vw,650px);height:360px;
- top:2%;right:4%;z-index:-1;pointer-events:none;
- background:radial-gradient(ellipse,#42bd9c16,transparent 68%);
- animation: ambientBreathe 12s ease-in-out infinite alternate;
-}
-.hero h1 em { color:var(--lime); background:linear-gradient(115deg,#e0ff95,#b9ef65,#6ed4c2,#d3ff8d);
- background-size:240% 100%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;
- animation: textGlowShift 11s ease-in-out infinite alternate;
-}
-@keyframes textGlowShift { from{background-position:0% center}to{background-position:100% center} }
-@keyframes ambientBreathe{from{opacity:.45;transform:translate3d(0,0,0) scale(.96)}to{opacity:.95;transform:translate3d(-18px,13px,0) scale(1.06)}}
-/* CTA buttons: restrained motion and visible keyboard focus */
-.btn,.lang,.filter,.int-filter,.int-card button,.int-send {transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, background-color .25s ease, border-color .25s ease;}
-.btn {position:relative;overflow:hidden;isolation:isolate}
-.btn::before {content:'';position:absolute;inset:-100% -50%;background:linear-gradient(105deg,transparent 41%,#ffffff24 50%,transparent 59%);transform:translateX(-100%);pointer-events:none;transition:transform .7s ease}
-.btn:hover::before {transform:translateX(100%)}
-.btn.primary:hover,.int-send:hover {box-shadow:0 12px 30px #c7f36d32;transform:translateY(-3px)}
-.btn.secondary:hover {box-shadow:0 8px 25px #3ca79e25;transform:translateY(-3px)}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible {outline:2px solid var(--lime);outline-offset:3px}
-.hero-pills span {transition:transform .3s ease,border-color .3s ease,background .3s ease}
-.hero-pills span:hover{transform:translateY(-3px);border-color:#80b493;background:#17302d}
-/* Hero dashboard: floating just a few pixels, with one-time graph load. */
-.side-panel { animation: dashboardFloat 9s ease-in-out infinite; }
-@keyframes dashboardFloat { 0%,100%{transform:translate3d(0,0,0) rotate(1deg)} 50%{transform:translate3d(0,-6px,0) rotate(.55deg)} }
-@keyframes dashboardFloatMobile { 0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)} }
-.barrows div {transform-origin:bottom;animation:barRise 1.1s cubic-bezier(.22,1,.36,1) both;}
-.barrows div:nth-child(2){animation-delay:80ms}.barrows div:nth-child(3){animation-delay:160ms}
-.barrows div:nth-child(4){animation-delay:240ms}.barrows div:nth-child(5){animation-delay:320ms}
-.barrows div:nth-child(6){animation-delay:400ms}.barrows div:nth-child(7){animation-delay:480ms}
-@keyframes barRise{from{transform:scaleY(.08);opacity:.2}to{transform:scaleY(1);opacity:.86}}
-.metric {transition:transform .3s ease,border-color .3s ease}
-.metric:hover{transform:translateY(-3px);border-color:#8cbf9a}
-/* Project cards, images, and process cards lift gently when hovered. */
-.card,.int-card,.int-box,.workflow>*,.trust-item {backface-visibility:hidden}
-.card {transition:transform .38s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .38s ease}
-.card:hover {transform:translateY(-6px);box-shadow:0 20px 48px #0007}
-.card .card-icon {transition:transform .4s cubic-bezier(.22,1,.36,1),background-color .3s}
-.card:hover .card-icon {transform:rotate(-5deg) scale(1.07);background-color:#2b624d}
-.card::after,.int-card::after {
- content:'';position:absolute;inset:0;opacity:0;pointer-events:none;
- background:radial-gradient(360px circle at var(--pointer-x,50%) var(--pointer-y,40%),#bdeaca17,transparent 62%);
- transition:opacity .32s ease;
-}
-.card:hover::after,.int-card:hover::after {opacity:1}
-.int-card {position:relative;transition:transform .42s cubic-bezier(.22,1,.36,1),border-color .35s,box-shadow .42s ease}
-.int-card:hover {transform:translateY(-6px);box-shadow:0 20px 45px #0008;border-color:#b58bff}
-.int-card img {transition:transform .75s cubic-bezier(.22,1,.36,1),filter .55s ease}
-.int-card:hover img {transform:scale(1.055);filter:saturate(1.08)}
-.int-card button:hover,.int-filter:hover,.filter:hover,.lang:hover {transform:translateY(-2px)}
-.int-box{transition:border-color .3s ease,box-shadow .3s ease}
-.int-box:hover{border-color:#7c688f;box-shadow:0 14px 32px #0004}
-/* Dialogue enters with a soft zoom; never animate while hidden. */
-.int-dialog[open], .modal[open] {animation:dialogEnter .28s cubic-bezier(.2,.9,.3,1) both}
-@keyframes dialogEnter{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-/* Keep the phone view clean. Animation on touch devices should never block interaction. */
-@media(max-width:760px){.side-panel{animation:dashboardFloatMobile 9s ease-in-out infinite}.hero::before{width:90vw;right:0;top:23%}}
-@media(hover:none){.card:hover,.int-card:hover,.btn:hover{transform:none}.int-card:hover img{transform:none}}
-/* Motion sensitivity / low-power accessibility: no fade-hidden content, no auto movement. */
-@media(prefers-reduced-motion:reduce){
- html{scroll-behavior:auto!important}
- *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
- html.motion-ready .motion-reveal {opacity:1!important;transform:none!important}
- .side-panel{transform:none!important}
- .reading-progress{display:none}
- .hero h1 em{-webkit-text-fill-color:var(--lime);background:none}
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The portfolio of 韩景宸 (Han Jingchen / Hin Sothun), focused on front-end web learning, practical digital work, Excel samples and video editing.">
+  <meta name="theme-color" content="#f5f2ea">
+  <meta property="og:title" content="韩景宸 | Han Jingchen | Hin Sothun — Portfolio">
+  <meta property="og:description" content="Web, digital and operations work by Han Jingchen (Hin Sothun).">
+  <meta property="og:type" content="website">
+  <title>韩景宸 | Han Jingchen | Hin Sothun — Web & Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
-<header><div class="wrap nav"><a class="logo" href="#top" aria-label="Han Jingchen, 韩景宸, Hin Sothun">韩景宸<span class="logo-divider"> / </span><small>HAN JINGCHEN</small></a><nav class="navlinks" aria-label="Main navigation"><a href="#projects" data-i18n="navProjects">Projects</a><a href="#interior" data-ic="nav">3D Interior</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#workflow" data-i18n="navWorkflow">Workflow</a><a href="#contact" data-i18n="navContact">Contact</a></nav><button id="lang" class="lang" type="button" aria-label="Switch language">简体中文</button></div></header><a id="mobileInterior" href="#interior">3D Interior · Concept Projects ↗</a>
-<main id="top">
-<section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" data-i18n="eyebrow">Phnom Penh, Cambodia · Open to opportunities</div><div class="nameplate"><span class="cn-name">韩景宸</span><span class="name-alt">HAN JINGCHEN · HIN SOTHUN</span></div><h1 data-i18n="heroTitle">From clean data <em>to clear decisions.</em></h1><p class="lead" data-i18n="heroLead">I'm Han Jingchen (韩景宸), also known as Hin Sothun. My work spans Excel record management, payment operations, daily reporting and team coordination. I value accuracy, dependable follow-up and continuous learning.</p><div class="hero-actions"><a href="#projects" class="btn primary"><span data-i18n="viewProjects">Explore work samples</span><span class="arrow">↗</span></a><a class="btn secondary" href="https://www.linkedin.com/in/hin-sothun-a58b66263/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewLinkedIn">View LinkedIn</span><span class="arrow">↗</span></a></div><div class="hero-pills"><span>Excel & Data Entry</span><span>Accounting Support</span><span>Payment Operations</span><span>Team Coordination</span></div></div><div class="side-panel" aria-label="Sample spreadsheet dashboard illustration"><div class="terminal-top"><span class="dots"><i></i><i></i><i></i></span><span>PORTFOLIO / WORKBOOK VIEW</span><span>● SAMPLE</span></div><div class="sheet-head"><div><strong data-i18n="dashTitle">Operations overview</strong><br/><small data-i18n="dashNote">Illustrative dashboard · Not business results</small></div><span class="sheet-tag">Excel</span></div><div class="metrics"><div class="metric"><span data-i18n="kpiFiles">Workbook samples</span><b>04</b></div><div class="metric"><span data-i18n="kpiAreas">Focus areas</span><b>05</b></div><div class="metric"><span data-i18n="kpiOrigin">Location</span><b style="font-size:.9rem">Phnom Penh</b></div></div><div class="barrows" aria-hidden="true"><div style="height:55%"></div><div style="height:76%"></div><div style="height:61%"></div><div style="height:91%"></div><div style="height:69%"></div><div style="height:83%"></div><div style="height:96%"></div></div><div class="sheet-table"><div class="tr"><span data-i18n="tableTask">Workflow</span><span data-i18n="tableType">Record type</span><span data-i18n="tableStatus">Status</span></div><div class="tr"><span>Data checks</span><span>Transactions</span><span class="ok">Reviewed</span></div><div class="tr"><span>Payment follow-up</span><span>Exceptions</span><span class="pending">Pending</span></div><div class="tr"><span>Team updates</span><span>Daily report</span><span class="ok">Prepared</span></div></div></div></div></section>
-<div class="trust"><div class="wrap trust-grid"><div class="trust-item"><i>↗</i><div><strong data-i18n="trust1">Real responsibilities, clearly described</strong><small data-i18n="trust1b">Payment operations & team support</small></div></div><div class="trust-item"><i>▦</i><div><strong data-i18n="trust2">Editable Excel samples</strong><small data-i18n="trust2b">Download and inspect four workbooks</small></div></div><div class="trust-item"><i>✓</i><div><strong data-i18n="trust3">Transparent portfolio</strong><small data-i18n="trust3b">Practice data identified as synthetic</small></div></div></div></div>
-<section class="block" id="projects"><div class="wrap"><div class="section-top"><div><div class="eyebrow" data-i18n="projectsLabel">01 / Selected work</div><h2 data-i18n="projectsTitle">Proof of process.<br/>Not just promises.</h2></div><p data-i18n="projectsIntro">Download four editable Excel practice projects. Each demonstrates a common accounting support workflow, with formulas, records, and summary views. One operations case study explains my team coordination approach.</p></div><div class="filterbar" role="group" aria-label="Project category"><button class="filter active" data-filter="all" data-i18n="fAll">All work</button><button class="filter" data-filter="accounting" data-i18n="fAccounting">Accounting</button><button class="filter" data-filter="operations" data-i18n="fOperations">Operations</button><button class="filter" data-filter="creative" data-i18n="fCreative">Creative</button></div><div class="cards" id="cards">
-<article class="card" data-cat="accounting"><div class="card-header"><div class="card-icon">▦</div><span class="card-code">01 / XLSX</span></div><h3 data-i18n="p1title">Cashbook & Cash Tracking</h3><p data-i18n="p1desc">Structured cash receipts, outgoing payments, running balances and categorized reporting for daily record control.</p><div class="tags"><span class="tag">Excel formulas</span><span class="tag">Cash tracking</span><span class="tag">Dashboard</span></div><div class="card-footer"><button data-preview="cashbook" data-i18n="preview">Preview sample ↗</button><span class="sep"></span><a href="files/01_Cashbook.xlsx" download data-i18n="download">Download Excel ↓</a></div></article>
-<article class="card" data-cat="accounting"><div class="card-header"><div class="card-icon">↳</div><span class="card-code">02 / XLSX</span></div><h3 data-i18n="p2title">Accounts Receivable Tracker</h3><p data-i18n="p2desc">Invoice records, payment matching, outstanding balances and aging views to support collection follow-up.</p><div class="tags"><span class="tag">Receivables</span><span class="tag">Invoice matching</span><span class="tag">Aging</span></div><div class="card-footer"><button data-preview="ar" data-i18n="preview">Preview sample ↗</button><span class="sep"></span><a href="files/02_Accounts_Receivable.xlsx" download data-i18n="download">Download Excel ↓</a></div></article>
-<article class="card" data-cat="accounting"><div class="card-header"><div class="card-icon">⇄</div><span class="card-code">03 / XLSX</span></div><h3 data-i18n="p3title">Accounts Payable Register</h3><p data-i18n="p3desc">Supplier bill records, approval tracking, due-date monitoring and payment allocation using linked references.</p><div class="tags"><span class="tag">Payables</span><span class="tag">Approvals</span><span class="tag">Due dates</span></div><div class="card-footer"><button data-preview="ap" data-i18n="preview">Preview sample ↗</button><span class="sep"></span><a href="files/03_Accounts_Payable.xlsx" download data-i18n="download">Download Excel ↓</a></div></article>
-<article class="card" data-cat="accounting"><div class="card-header"><div class="card-icon">≋</div><span class="card-code">04 / XLSX</span></div><h3 data-i18n="p4title">Bank Reconciliation</h3><p data-i18n="p4desc">A workbook to compare bank records with internal cashbook transactions and identify unmatched items.</p><div class="tags"><span class="tag">Reconciliation</span><span class="tag">Cross-checking</span><span class="tag">Exceptions</span></div><div class="card-footer"><button data-preview="bank" data-i18n="preview">Preview sample ↗</button><span class="sep"></span><a href="files/04_Bank_Reconciliation.xlsx" download data-i18n="download">Download Excel ↓</a></div></article>
-<article class="card" data-cat="operations"><div class="card-header"><div class="card-icon">⌘</div><span class="card-code">05 / CASE STUDY</span></div><h3 data-i18n="p5title">Payment Team & Daily Reporting</h3><p data-i18n="p5desc">How I support daily operations: assign and check tasks, review transactions, follow up on pending issues and report progress to management.</p><div class="tags"><span class="tag">Team support</span><span class="tag">Data accuracy</span><span class="tag">Daily reports</span></div><div class="card-footer"><a href="#workflow" data-i18n="seeProcess">See my workflow ↗</a></div></article>
-<article class="card" data-cat="creative"><div class="card-header"><div class="card-icon">▷</div><span class="card-code">06 / CREATIVE PORTFOLIO</span></div><h3 data-i18n="p6title">Video Editing & Digital Content</h3><p data-i18n="p6desc">A separate portfolio covering video editing, promotional visuals, social content and creative concept studies.</p><div class="tags"><span class="tag">Premiere Pro</span><span class="tag">After Effects</span><span class="tag">Content</span></div><div class="card-footer"><a href="https://hin-sothun-video-editor.hinfelix99.chatgpt.site/" target="_blank" rel="noopener noreferrer" data-i18n="openCreative">Open video portfolio ↗</a></div></article>
-</div><p class="disclaimer" data-i18n="disclaimer">Accounting files are independently prepared practice samples with invented companies, people and transactions. They demonstrate Excel and accounting-support methods, not verified employer or client outcomes.</p></div></section>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Han Jingchen, home"><span class="brand-mark" aria-hidden="true">景</span><span class="brand-name">HAN JINGCHEN</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work" data-i18n="navWork">Work</a><a href="#capabilities" data-i18n="navSkills">Capabilities</a><a href="#background" data-i18n="navBackground">Background</a><a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language" id="languageButton" type="button" aria-label="Switch language">中文</button>
+        <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#work" data-i18n="navWork">Work</a><a href="#capabilities" data-i18n="navSkills">Capabilities</a><a href="#background" data-i18n="navBackground">Background</a><a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+  </header>
 
-<section class="block interior-section" id="interior" aria-labelledby="interior-heading"><div class="wrap">
- <div class="interior-kicker" data-ic="kicker">NEW SECTION / 3D INTERIOR & SPACE IDEAS</div>
- <div class="interior-head"><div><div class="eyebrow" data-ic="eyebrow">07 / Concept portfolio</div><h2 id="interior-heading"><span data-ic="title1">Different spaces.</span><br/><span class="accent" data-ic="title2">Different ideas.</span></h2></div>
- <p data-ic="intro">A growing gallery of ten illustrative interior concepts covering homes, furniture, cafés, retail and salons. Explore each style, intended spatial use and furniture plan.</p></div>
- <div class="interior-links"><a href="#int-gallery" data-ic="jumpGallery">Explore 10 concepts ↗</a><a href="#int-presentation" data-ic="jumpPresent">Interview presentation ↗</a><a href="#int-feedback" data-ic="jumpFeedback">Leave feedback ↗</a></div>
- <div class="interior-proof"><span aria-hidden="true">✧</span><span><strong data-ic="disclosureLabel">Concept/illustration notice:</strong> <span data-ic="disclosure">These are AI-generated visual studies prepared for a portfolio demonstration, not proof of personally completed 3D models, commissioned client work, or construction projects.</span></span></div>
- <div id="int-gallery" class="int-filters" role="group" aria-label="Interior concept category"><button class="int-filter" data-show="all" aria-pressed="true" data-ic="all">All 10 concepts</button><button class="int-filter" data-show="res" aria-pressed="false" data-ic="res">Residential</button><button class="int-filter" data-show="com" aria-pressed="false" data-ic="com">Commercial</button></div>
- <div class="int-grid">
-<article class="int-card" data-type="res">
-   <img src="assets/interior/concept-01.webp" alt="AI-generated illustrative concept visual for Modern Luxury Condo" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">01 / <span data-ic-kind="0">Residential</span> · Concept Study</div>
-   <h3 data-ic-title="0">Modern Luxury Condo</h3><p data-ic-desc="0">An open-plan living concept with warm stone, layered light and soft seating.</p>
-   <button type="button" class="int-open" data-intid="0" aria-label="View concept details for Modern Luxury Condo">View project concept ↗</button></div></article>
-<article class="int-card" data-type="res">
-   <img src="assets/interior/concept-02.webp" alt="AI-generated illustrative concept visual for Warm Minimal Bedroom" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">02 / <span data-ic-kind="1">Residential</span> · Concept Study</div>
-   <h3 data-ic-title="1">Warm Minimal Bedroom</h3><p data-ic-desc="1">A calm bedroom study with hidden storage and gentle bedside lighting.</p>
-   <button type="button" class="int-open" data-intid="1" aria-label="View concept details for Warm Minimal Bedroom">View project concept ↗</button></div></article>
-<article class="int-card" data-type="res">
-   <img src="assets/interior/concept-03.webp" alt="AI-generated illustrative concept visual for Kitchen &amp; Dining Studio" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">03 / <span data-ic-kind="2">Residential</span> · Concept Study</div>
-   <h3 data-ic-title="2">Kitchen &amp; Dining Studio</h3><p data-ic-desc="2">A compact kitchen and dining layout balancing food preparation and social space.</p>
-   <button type="button" class="int-open" data-intid="2" aria-label="View concept details for Kitchen &amp; Dining Studio">View project concept ↗</button></div></article>
-<article class="int-card" data-type="res">
-   <img src="assets/interior/concept-04.webp" alt="AI-generated illustrative concept visual for Creative Home Office" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">04 / <span data-ic-kind="3">Residential</span> · Concept Study</div>
-   <h3 data-ic-title="3">Creative Home Office</h3><p data-ic-desc="3">A flexible desk space for focused work, display and cable organization.</p>
-   <button type="button" class="int-open" data-intid="3" aria-label="View concept details for Creative Home Office">View project concept ↗</button></div></article>
-<article class="int-card" data-type="com">
-   <img src="assets/interior/concept-05.webp" alt="AI-generated illustrative concept visual for Botanical Café" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">05 / <span data-ic-kind="4">Commercial</span> · Concept Study</div>
-   <h3 data-ic-title="4">Botanical Café</h3><p data-ic-desc="4">A hospitality concept using plants, warmth and flexible customer seating.</p>
-   <button type="button" class="int-open" data-intid="4" aria-label="View concept details for Botanical Café">View project concept ↗</button></div></article>
-<article class="int-card" data-type="com">
-   <img src="assets/interior/concept-06.webp" alt="AI-generated illustrative concept visual for Retail Boutique" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">06 / <span data-ic-kind="5">Commercial</span> · Concept Study</div>
-   <h3 data-ic-title="5">Retail Boutique</h3><p data-ic-desc="5">A contemporary boutique arrangement with clear product zones and fitting flow.</p>
-   <button type="button" class="int-open" data-intid="5" aria-label="View concept details for Retail Boutique">View project concept ↗</button></div></article>
-<article class="int-card" data-type="com">
-   <img src="assets/interior/concept-07.webp" alt="AI-generated illustrative concept visual for Soft Pink Beauty Salon" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">07 / <span data-ic-kind="6">Commercial</span> · Concept Study</div>
-   <h3 data-ic-title="6">Soft Pink Beauty Salon</h3><p data-ic-desc="6">An inviting beauty-studio look with soft pink details and orderly workstations.</p>
-   <button type="button" class="int-open" data-intid="6" aria-label="View concept details for Soft Pink Beauty Salon">View project concept ↗</button></div></article>
-<article class="int-card" data-type="com">
-   <img src="assets/interior/concept-08.webp" alt="AI-generated illustrative concept visual for Furniture Showroom" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">08 / <span data-ic-kind="7">Commercial</span> · Concept Study</div>
-   <h3 data-ic-title="7">Furniture Showroom</h3><p data-ic-desc="7">A display environment comparing sofa, chair and table arrangements by lifestyle.</p>
-   <button type="button" class="int-open" data-intid="7" aria-label="View concept details for Furniture Showroom">View project concept ↗</button></div></article>
-<article class="int-card" data-type="res">
-   <img src="assets/interior/concept-09.webp" alt="AI-generated illustrative concept visual for Small Studio Apartment" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">09 / <span data-ic-kind="8">Residential</span> · Concept Study</div>
-   <h3 data-ic-title="8">Small Studio Apartment</h3><p data-ic-desc="8">A small-space living idea using multi-purpose furniture and bright finishes.</p>
-   <button type="button" class="int-open" data-intid="8" aria-label="View concept details for Small Studio Apartment">View project concept ↗</button></div></article>
-<article class="int-card" data-type="com">
-   <img src="assets/interior/concept-10.webp" alt="AI-generated illustrative concept visual for Contemporary Restaurant" loading="lazy" decoding="async" width="800" height="480"/>
-   <div class="int-card-body"><div class="int-card-meta">10 / <span data-ic-kind="9">Commercial</span> · Concept Study</div>
-   <h3 data-ic-title="9">Contemporary Restaurant</h3><p data-ic-desc="9">A dining concept with warm timber, greenery and varied table groupings.</p>
-   <button type="button" class="int-open" data-intid="9" aria-label="View concept details for Contemporary Restaurant">View project concept ↗</button></div></article>
- </div><p class="more-hint" data-ic="grow">Additional original design work can replace these sample concept visuals as it becomes available.</p>
- <div class="int-extras">
-  <article class="int-box" id="int-presentation"><h3 data-ic="presentation">How I present design ideas</h3><p data-ic="presentIntro">A simple explanation framework for interviews and conversations. It describes the design approach, not completed professional commissions.</p>
-   <ol class="int-steps"><li data-ic="s1">Purpose: Who will use this space, and what does it need?</li><li data-ic="s2">Layout: How will people move through it?</li><li data-ic="s3">Style: Which materials, colors and mood fit?</li><li data-ic="s4">Furniture: What seating, storage and lighting are practical?</li><li data-ic="s5">Presentation: Show visual concept, trade-offs and next steps.</li></ol>
-   <div class="int-present"><strong data-ic="sampleLabel">Interview introduction (sample)</strong><p data-ic="sampleSpeak">“These are interior concept studies illustrating different moods and space-planning ideas. I would begin by listening to the client’s needs, then discuss layout, furniture, materials and visual direction. I’m continuing to build practical 3D design skills.”</p></div>
-   <video class="int-reel" controls playsinline preload="none" poster="assets/interior/concept-01.webp"><source src="assets/interior/concept-reel.mp4" type="video/mp4"/>Your browser does not support video.</video><p class="int-note" data-ic="reelNote">Animated concept-image reel for presentation. This is not a rendered 3D walkthrough or footage of a real project.</p>
-  </article>
-  <article class="int-box" id="int-feedback"><h3 data-ic="feedbackTitle">Feedback & collaboration</h3><p data-ic="feedbackIntro">Have a design suggestion or a job opportunity? Share your thoughts below.</p>
-   <form class="int-feedback" id="intFeedbackForm"><div><label for="intName" data-ic="name">Your name</label><input id="intName" name="name" required autocomplete="name" placeholder="Name" maxlength="80"/></div>
-   <div><label for="intEmail" data-ic="email">Your email (optional)</label><input id="intEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" maxlength="160"/></div>
-   <div class="full"><label for="intTopic" data-ic="topic">Feedback topic</label><select id="intTopic"><option value="Interior concept feedback">Interior concept feedback</option><option value="Job / interview opportunity">Job / interview opportunity</option><option value="Collaboration">Collaboration</option></select></div>
-   <div class="full"><label for="intMessage" data-ic="message">Your message</label><textarea id="intMessage" name="message" required maxlength="2500" placeholder="Share a suggestion, question or opportunity..."></textarea></div>
-   <div class="full"><button type="submit" class="int-send" data-ic="send">Prepare email feedback ↗</button><p class="int-note" data-ic="mailtoNote">This opens your email app with a drafted message. The website does not save feedback or send it automatically.</p><p class="int-mail">Alternative: <a href="mailto:Hinfelix99@gmail.com" style="text-decoration:underline;color:#cfaaff">Hinfelix99@gmail.com</a></p></div>
-   </form>
-  </article>
- </div>
-</div></section>
-<dialog id="intDialog" class="int-dialog" aria-labelledby="intDlgTitle"><div class="inner"><div class="rowhead"><div><div class="interior-kicker" style="margin:0 0 10px">CONCEPT STUDY · NOT CLIENT WORK</div><h3 id="intDlgTitle"></h3></div><button type="button" class="x" id="intClose" aria-label="Close">✕</button></div><img id="intDlgImg" alt="Illustrative concept render"/><dl><div><dt id="intDt1">Concept goal</dt><dd id="intDd1"></dd></div><div><dt id="intDt2">Space planning idea</dt><dd id="intDd2"></dd></div><div><dt id="intDt3">Furniture & materials</dt><dd id="intDd3"></dd></div></dl><p class="int-note" id="intDlgNote">AI-generated concept imagery used for presentation; not an original completed client project.</p></div></dialog>
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="overline reveal" data-i18n="heroOverline">PHNOM PENH · OPEN TO IT & WEB OPPORTUNITIES</p>
+        <div class="identity reveal"><span>韩景宸</span><span class="identity-divider">/</span><span>Han Jingchen</span><span class="identity-divider">/</span><span>Hin Sothun</span></div>
+        <h1 class="reveal"><span data-i18n="heroLine1">I make careful, useful</span><span class="hero-accent" data-i18n="heroLine2">digital work.</span></h1>
+        <p class="hero-intro reveal" data-i18n="heroIntro">I am developing front-end web skills through personal projects, supported by real experience in payment operations, Excel data work and team coordination. This portfolio shows what I can demonstrate today—and what I am actively learning next.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-dark" href="#work"><span data-i18n="exploreWork">Explore selected work</span><span aria-hidden="true">↘</span></a>
+          <a class="button button-line" href="https://github.com/hinfelix2001" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-stage reveal" id="heroStage" aria-label="Interactive front-end project illustration">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="browser-card">
+          <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>portfolio/index.html</span><span class="live-dot"><i></i> LIVE</span></div>
+          <div class="browser-body">
+            <div class="code-label">FRONT-END / PERSONAL PROJECT</div><div class="code-title">&lt;build <em>with care</em>&gt;</div>
+            <div class="code-lines" aria-hidden="true"><span style="--line:88%"></span><span style="--line:64%"></span><span style="--line:76%"></span><span style="--line:48%"></span></div>
+            <div class="tech-grid"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+          </div>
+        </div>
+        <div class="stage-note note-one"><span>01</span><b data-i18n="stageResponsive">Responsive</b></div><div class="stage-note note-two"><span>02</span><b data-i18n="stageAccessible">Accessible</b></div>
+        <svg class="scribble" viewBox="0 0 240 90" aria-hidden="true"><path d="M4 65C62 6 154 5 230 46M208 30l22 16-25 10"/></svg>
+      </div>
+    </section>
 
-<section class="block about about-band" id="experience"><div class="wrap about-grid"><div><div class="eyebrow" data-i18n="experienceLabel">02 / Experience & capabilities</div><h2 data-i18n="experienceTitle">Dependable support.<br/>Careful follow-through.</h2><p data-i18n="experienceLead">I have supported payment operations in team leadership and assistant team leadership capacities. My responsibilities have included coordinating daily assignments, checking transaction records, following up on pending or failed payments and reporting updates. I also work with Excel for record organization and data checking.</p><p data-i18n="experienceFit">My background aligns with payment operations, data entry, Excel reporting and accounting administration support. I am interested in opportunities where I can contribute while developing deeper accounting expertise.</p><div class="hero-actions"><a class="btn secondary" href="https://www.linkedin.com/in/hin-sothun-a58b66263/" target="_blank" rel="noopener noreferrer"><span data-i18n="experienceLinkedIn">Work profile on LinkedIn</span><span class="arrow">↗</span></a></div></div><div class="details"><div class="detail"><span class="num">01 /</span><strong data-i18n="exp1">Payment Operations</strong><p data-i18n="exp1b">Transaction information checks, payment request reviews and issue follow-up.</p></div><div class="detail"><span class="num">02 /</span><strong data-i18n="exp2">Excel & Data Support</strong><p data-i18n="exp2b">Structured records, accurate data entry, reporting and simple reconciliation workflows.</p></div><div class="detail"><span class="num">03 /</span><strong data-i18n="exp3">Team Coordination</strong><p data-i18n="exp3b">Task allocation, work monitoring, team communication and daily progress updates.</p></div><div class="detail"><span class="num">04 /</span><strong data-i18n="exp4">Creative & Digital Skills</strong><p data-i18n="exp4b">Video editing, visual communication, digital file management and new-tool learning.</p></div></div></div></section>
-<section class="block" id="workflow"><div class="wrap"><div class="section-top"><div><div class="eyebrow" data-i18n="workflowLabel">03 / My work method</div><h2 data-i18n="workflowTitle">A simple workflow.<br/>Consistent delivery.</h2></div><p data-i18n="workflowIntro">An example of how I approach records and daily team operations. Specific company procedures will always take priority.</p></div><div class="workflow"><article><div class="n">01</div><strong data-i18n="w1">Receive & organize</strong><p data-i18n="w1b">Gather source records, clarify tasks and keep reference information structured.</p></article><article><div class="n">02</div><strong data-i18n="w2">Verify accuracy</strong><p data-i18n="w2b">Check dates, IDs, amounts and incomplete fields before reporting.</p></article><article><div class="n">03</div><strong data-i18n="w3">Coordinate follow-up</strong><p data-i18n="w3b">Record pending or failed transactions, communicate issues and track next actions.</p></article><article><div class="n">04</div><strong data-i18n="w4">Report clearly</strong><p data-i18n="w4b">Summarize daily progress, unresolved items and relevant updates for review.</p></article></div></div></section>
-<section class="block contact" id="contact"><div class="wrap"><div class="eyebrow" data-i18n="contactLabel">04 / Let's connect</div><h2 data-i18n="contactTitle">Looking for someone who takes the details seriously?</h2><p data-i18n="contactLead">Based in Phnom Penh, Cambodia. Open to discussing Excel support, accounting administration, payment operations and data-focused roles. My work history and contact details are also available on LinkedIn.</p><div class="hero-actions"><a class="btn primary" href="mailto:Hinfelix99@gmail.com?subject=Work%20opportunity%20for%20Han%20Jingchen"><span data-i18n="emailMe">Email Han Jingchen</span><span class="arrow">↗</span></a><a class="btn secondary" href="https://www.linkedin.com/in/hin-sothun-a58b66263/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn ghost" href="https://t.me/hansuteng118" target="_blank" rel="noopener noreferrer">Telegram ↗</a></div></div></section>
-</main><footer class="footer"><div class="wrap footin"><span>© 2026 韩景宸 · HAN JINGCHEN · HIN SOTHUN · PHNOM PENH</span><span><span data-i18n="footerNote">Accounting support · Excel · Operations</span> · <a href="https://hin-sothun-video-editor.hinfelix99.chatgpt.site/" target="_blank" rel="noopener noreferrer" data-i18n="footerCreative">Video portfolio ↗</a></span></div></footer>
-<dialog class="modal" id="previewDialog"><div class="modal-inner"><div class="modal-head"><div><p data-i18n="modalLabel">Excel practice sample</p><h3 id="modalTitle"></h3></div><button class="close" id="closeDialog" aria-label="Close preview" type="button">×</button></div><p class="preview-note" data-i18n="modalNote">Illustrative view of the sample workflow. Download the workbook to inspect the actual records, formulas and charts. All records are invented for demonstration.</p><div class="table-scroll"><table class="preview-table"><thead id="previewHead"></thead><tbody id="previewBody"></tbody></table></div><div class="modal-actions"><a class="btn primary" id="modalDownload" download><span data-i18n="downloadFull">Download workbook</span><span>↓</span></a><button class="btn secondary" id="modalClose2" data-i18n="close">Close</button></div></div></dialog>
-<script>
-const langText={en:{navProjects:'Projects',navExperience:'Experience',navWorkflow:'Workflow',navContact:'Contact',eyebrow:'Phnom Penh, Cambodia · Open to opportunities',heroTitle:'From clean data <em>to clear decisions.</em>',heroLead:"I'm Han Jingchen (韩景宸), also known as Hin Sothun. My work spans Excel record management, payment operations, daily reporting and team coordination. I value accuracy, dependable follow-up and continuous learning.",viewProjects:'Explore work samples',viewLinkedIn:'View LinkedIn',dashTitle:'Operations overview',dashNote:'Illustrative dashboard · Not business results',kpiFiles:'Workbook samples',kpiAreas:'Focus areas',kpiOrigin:'Location',tableTask:'Workflow',tableType:'Record type',tableStatus:'Status',trust1:'Real responsibilities, clearly described',trust1b:'Payment operations & team support',trust2:'Editable Excel samples',trust2b:'Download and inspect four workbooks',trust3:'Transparent portfolio',trust3b:'Practice data identified as synthetic',projectsLabel:'01 / Selected work',projectsTitle:'Proof of process.<br/>Not just promises.',projectsIntro:'Download four editable Excel practice projects. Each demonstrates a common accounting support workflow, with formulas, records, and summary views. One operations case study explains my team coordination approach.',fAll:'All work',fAccounting:'Accounting',fOperations:'Operations',fCreative:'Creative',p1title:'Cashbook & Cash Tracking',p1desc:'Structured cash receipts, outgoing payments, running balances and categorized reporting for daily record control.',p2title:'Accounts Receivable Tracker',p2desc:'Invoice records, payment matching, outstanding balances and aging views to support collection follow-up.',p3title:'Accounts Payable Register',p3desc:'Supplier bill records, approval tracking, due-date monitoring and payment allocation using linked references.',p4title:'Bank Reconciliation',p4desc:'A workbook to compare bank records with internal cashbook transactions and identify unmatched items.',p5title:'Payment Team & Daily Reporting',p5desc:'How I support daily operations: assign and check tasks, review transactions, follow up on pending issues and report progress to management.',p6title:'Video Editing & Digital Content',p6desc:'A separate portfolio covering video editing, promotional visuals, social content and creative concept studies.',preview:'Preview sample ↗',download:'Download Excel ↓',seeProcess:'See my workflow ↗',openCreative:'Open video portfolio ↗',disclaimer:'Accounting files are independently prepared practice samples with invented companies, people and transactions. They demonstrate Excel and accounting-support methods, not verified employer or client outcomes.',experienceLabel:'02 / Experience & capabilities',experienceTitle:'Dependable support.<br/>Careful follow-through.',experienceLead:'I have supported payment operations in team leadership and assistant team leadership capacities. My responsibilities have included coordinating daily assignments, checking transaction records, following up on pending or failed payments and reporting updates. I also work with Excel for record organization and data checking.',experienceFit:'My background aligns with payment operations, data entry, Excel reporting and accounting administration support. I am interested in opportunities where I can contribute while developing deeper accounting expertise.',experienceLinkedIn:'Work profile on LinkedIn',exp1:'Payment Operations',exp1b:'Transaction information checks, payment request reviews and issue follow-up.',exp2:'Excel & Data Support',exp2b:'Structured records, accurate data entry, reporting and simple reconciliation workflows.',exp3:'Team Coordination',exp3b:'Task allocation, work monitoring, team communication and daily progress updates.',exp4:'Creative & Digital Skills',exp4b:'Video editing, visual communication, digital file management and new-tool learning.',workflowLabel:'03 / My work method',workflowTitle:'A simple workflow.<br/>Consistent delivery.',workflowIntro:'An example of how I approach records and daily team operations. Specific company procedures will always take priority.',w1:'Receive & organize',w1b:'Gather source records, clarify tasks and keep reference information structured.',w2:'Verify accuracy',w2b:'Check dates, IDs, amounts and incomplete fields before reporting.',w3:'Coordinate follow-up',w3b:'Record pending or failed transactions, communicate issues and track next actions.',w4:'Report clearly',w4b:'Summarize daily progress, unresolved items and relevant updates for review.',contactLabel:"04 / Let's connect",contactTitle:'Looking for someone who takes the details seriously?',contactLead:'Based in Phnom Penh, Cambodia. Open to discussing Excel support, accounting administration, payment operations and data-focused roles. My work history and contact details are also available on LinkedIn.',emailMe:'Email Han Jingchen',footerNote:'Accounting support · Excel · Operations',footerCreative:'Video portfolio ↗',modalLabel:'Excel practice sample',modalNote:'Illustrative view of the sample workflow. Download the workbook to inspect the actual records, formulas and charts. All records are invented for demonstration.',downloadFull:'Download workbook',close:'Close'},zh:{navProjects:'作品项目',navExperience:'工作经验',navWorkflow:'工作流程',navContact:'联系方式',eyebrow:'柬埔寨金边 · 寻找合适的工作机会',heroTitle:'让数据更准确，<em>让工作更清晰。</em>',heroLead:'您好，我叫韩景宸（Han Jingchen），英文及高棉文姓名为 Hin Sothun，目前居住在柬埔寨金边。我的工作涉及 Excel 数据整理、支付运营、日常报表和团队协调。我重视准确性、及时跟进，并持续学习新技能。',viewProjects:'查看作品示例',viewLinkedIn:'查看 LinkedIn',dashTitle:'运营工作概览',dashNote:'示意仪表盘 · 非真实业务业绩',kpiFiles:'Excel 示例文件',kpiAreas:'技能领域',kpiOrigin:'所在地',tableTask:'工作流程',tableType:'记录类型',tableStatus:'状态',trust1:'清晰介绍实际工作职责',trust1b:'支付运营与团队协作',trust2:'可编辑的 Excel 示例',trust2b:'提供 4 份工作簿下载',trust3:'如实展示作品',trust3b:'明确标注模拟练习数据',projectsLabel:'01 / 精选作品',projectsTitle:'用作品展示能力，<br/>而不只是文字介绍。',projectsIntro:'这里有四份可下载、可编辑的 Excel 练习作品，分别展示常见的财务辅助工作流程，包括公式、记录及汇总。另有团队运营工作案例。',fAll:'全部项目',fAccounting:'财务相关',fOperations:'运营工作',fCreative:'创意作品',p1title:'现金日记账与资金记录',p1desc:'整理现金收入、支出、余额及分类汇总，展示日常数据管理方式。',p2title:'应收账款跟踪表',p2desc:'通过发票记录、收款匹配、未结余额及账龄汇总辅助跟进收款。',p3title:'应付账款登记表',p3desc:'记录供应商账单、审批状态、到期日及付款匹配信息。',p4title:'银行对账示例',p4desc:'对照银行流水和内部账簿记录，检查未匹配的交易。',p5title:'支付团队与日报管理',p5desc:'介绍我如何分配及检查日常任务、核对交易、跟进待处理问题并向管理层汇报工作进度。',p6title:'视频剪辑与数字内容',p6desc:'独立的视频作品集，展示视频剪辑、推广素材、社交媒体内容和创意练习。',preview:'预览示例 ↗',download:'下载 Excel ↓',seeProcess:'查看工作流程 ↗',openCreative:'查看视频作品集 ↗',disclaimer:'财务 Excel 文件为个人练习作品，使用虚构公司、人物及交易数据，主要展示 Excel 和财务辅助工作方法，不代表真实公司或客户的业务业绩。',experienceLabel:'02 / 工作经验与技能',experienceTitle:'认真负责，<br/>及时跟进。',experienceLead:'我曾以支付团队组长及副组长相关角色参与团队的日常运营工作，包括安排任务、核对交易记录、跟进待处理或失败的付款，并汇报工作进展。同时，我使用 Excel 整理记录、检查数据。',experienceFit:'我希望从事支付运营、数据录入、Excel 报表及财务行政支持等相关工作，并在实际工作中进一步提升财务专业能力。',experienceLinkedIn:'在 LinkedIn 查看经历',exp1:'支付运营',exp1b:'核对交易资料、检查支付申请及跟进问题。',exp2:'Excel 与数据支持',exp2b:'数据录入、整理、简单对账与日常报表。',exp3:'团队协调',exp3b:'分配任务、跟踪进度、沟通协作及日报汇总。',exp4:'创意与数字技能',exp4b:'视频剪辑、视觉内容、文件管理及学习新工具。',workflowLabel:'03 / 工作方式',workflowTitle:'流程清晰，<br/>执行可靠。',workflowIntro:'这是我处理数据与团队日常工作的基本方法，实际工作中会严格遵循公司的流程与规定。',w1:'接收并整理',w1b:'收集原始资料，明确任务，整理相关信息。',w2:'核实准确性',w2b:'检查日期、编号、金额及缺失的信息。',w3:'协调跟进',w3b:'记录待处理或失败的交易，沟通问题并跟进后续步骤。',w4:'汇总并汇报',w4b:'汇报每日工作进展、未解决事项与重要更新。',contactLabel:'04 / 联系我',contactTitle:'需要一位认真负责、注重细节的团队成员吗？',contactLead:'我目前居住在柬埔寨金边，希望了解 Excel 数据支持、财务行政、支付运营及相关岗位。您也可以在 LinkedIn 查看我的个人资料。',emailMe:'给我发邮件',footerNote:'财务辅助 · Excel · 运营支持',footerCreative:'视频作品集 ↗',modalLabel:'Excel 练习作品',modalNote:'表格为对应工作流程的示意预览。请下载 Excel 文件查看实际练习记录、公式及图表。全部信息均为模拟数据。',downloadFull:'下载工作簿',close:'关闭'}};
-const previews={cashbook:{title:{en:'Cashbook & Cash Tracking',zh:'现金日记账与资金记录'},file:'01_Cashbook.xlsx',head:['Date','Reference','Category','Cash in','Cash out','Balance'],rows:[['2026-09-01','C-1001','Sales','450.00','—','450.00'],['2026-09-02','C-1002','Office supplies','—','85.00','365.00'],['2026-09-03','C-1003','Cash receipt','200.00','—','565.00']]},ar:{title:{en:'Accounts Receivable Tracker',zh:'应收账款跟踪表'},file:'02_Accounts_Receivable.xlsx',head:['Invoice ID','Invoice date','Customer','Amount','Received','Open balance'],rows:[['INV-101','2026-09-01','Sample Co. A','750.00','500.00','250.00'],['INV-102','2026-09-04','Sample Co. B','480.00','0.00','480.00'],['INV-103','2026-09-07','Sample Co. C','1,200.00','1,200.00','0.00']]},ap:{title:{en:'Accounts Payable Register',zh:'应付账款登记表'},file:'03_Accounts_Payable.xlsx',head:['Bill ID','Date','Amount USD','Approval','Paid USD','Status'],rows:[['BILL-2001','2026-08-28','160.00','Approved','160.00','Paid'],['BILL-2006','2026-09-18','259.00','Approved','259.00','Paid'],['BILL-2025','2026-11-08','160.00','Pending','0.00','Not yet due']]},bank:{title:{en:'Bank Reconciliation',zh:'银行对账示例'},file:'04_Bank_Reconciliation.xlsx',head:['Date','Reference','Bank amount','Book amount','Match','Follow-up'],rows:[['2026-09-01','TXN-A001','550.00','550.00','Yes','—'],['2026-09-02','TXN-A002','-75.00','-75.00','Yes','—'],['2026-09-03','TXN-A003','—','-40.00','No','Review timing']]}};
-const richKeys=new Set(['heroTitle','projectsTitle','experienceTitle','workflowTitle']);let language='en';function switchLanguage(next){language=next;document.documentElement.lang=next==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(langText[next][k]){if(richKeys.has(k)){el.innerHTML=langText[next][k]}else{el.textContent=langText[next][k]}}});document.getElementById('lang').textContent=next==='zh'?'English':'简体中文';document.title=next==='zh'?'韩景宸（Han Jingchen）| 财务辅助、Excel 与运营作品集':'Han Jingchen (韩景宸) | Hin Sothun · Excel & Operations Portfolio';}document.getElementById('lang').addEventListener('click',()=>switchLanguage(language==='en'?'zh':'en'));document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const cat=btn.dataset.filter;document.querySelectorAll('.card').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'flex':'none')}));const dlg=document.getElementById('previewDialog');document.querySelectorAll('[data-preview]').forEach(b=>b.addEventListener('click',()=>{const item=previews[b.dataset.preview];document.getElementById('modalTitle').textContent=item.title[language];document.getElementById('previewHead').replaceChildren();document.getElementById('previewBody').replaceChildren();const tr=document.createElement('tr');for(const h of item.head){const th=document.createElement('th');th.textContent=h;tr.append(th)}document.getElementById('previewHead').append(tr);for(const row of item.rows){const rr=document.createElement('tr');for(const v of row){const td=document.createElement('td');td.textContent=v;rr.append(td)}document.getElementById('previewBody').append(rr)}document.getElementById('modalDownload').href='files/'+item.file;dlg.showModal()}));document.getElementById('closeDialog').addEventListener('click',()=>dlg.close());document.getElementById('modalClose2').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>FRONT-END FOUNDATIONS</span><i>✦</i><span>PRACTICAL DIGITAL WORK</span><i>✦</i><span>HONEST PROGRESS</span><i>✦</i><span>FRONT-END FOUNDATIONS</span><i>✦</i><span>PRACTICAL DIGITAL WORK</span><i>✦</i><span>HONEST PROGRESS</span><i>✦</i></div></div>
 
-/* Isolated interior portfolio enhancement: original accounting code is unchanged. */
-const interiorProjects = [{"cat":"res","en":{"title":"Modern Luxury Condo","desc":"An open-plan living concept with warm stone, layered light and soft seating.","focus":"Plan the seating zone around conversation and clear movement paths.","materials":"Sectional sofa · coffee table · TV storage · warm wood"},"zh":{"title":"现代轻奢公寓","desc":"以温润石材、层次照明和柔软沙发打造开放式客厅概念。","focus":"以交流动线和通行空间安排沙发与休闲区。","materials":"组合沙发 · 茶几 · 电视收纳柜 · 暖色木饰面"}},{"cat":"res","en":{"title":"Warm Minimal Bedroom","desc":"A calm bedroom study with hidden storage and gentle bedside lighting.","focus":"Keep circulation clear and create a restful focal wall.","materials":"Platform bed · wardrobe · side tables · linen palette"},"zh":{"title":"温暖极简卧室","desc":"研究安静舒适的卧室氛围、隐藏式收纳及床头灯光。","focus":"保障通行宽度，并营造安静的床头背景墙。","materials":"平台床 · 衣柜 · 床头柜 · 亚麻色系"}},{"cat":"res","en":{"title":"Kitchen & Dining Studio","desc":"A compact kitchen and dining layout balancing food preparation and social space.","focus":"Consider the prep, cook and clean sequence before positioning cabinetry.","materials":"Kitchen island · built-in cabinets · dining set"},"zh":{"title":"现代厨房与餐厅","desc":"兼顾烹饪与交流的小型厨房和餐厅概念。","focus":"先考虑备餐、烹饪和清洁动线，再规划橱柜。","materials":"中岛台 · 内嵌橱柜 · 餐桌椅"}},{"cat":"res","en":{"title":"Creative Home Office","desc":"A flexible desk space for focused work, display and cable organization.","focus":"Separate task lighting from ambient lighting and allow ergonomic clearance.","materials":"Work desk · shelving · ergonomic chair · storage"},"zh":{"title":"创意家庭办公室","desc":"兼顾专注工作、展示收纳与走线管理的家庭办公区。","focus":"区分工作照明与氛围灯光，预留符合使用需求的空间。","materials":"办公桌 · 层架 · 人体工学椅 · 收纳"}},{"cat":"com","en":{"title":"Botanical Café","desc":"A hospitality concept using plants, warmth and flexible customer seating.","focus":"Prioritize circulation between entrance, ordering counter and seating.","materials":"Bar counter · bistro tables · pendants · greenery"},"zh":{"title":"植物主题咖啡馆","desc":"以绿植、温暖材质和灵活座位营造咖啡馆空间。","focus":"优先考虑入口、点单台及座位之间的顾客动线。","materials":"吧台 · 小圆桌 · 吊灯 · 绿植"}},{"cat":"com","en":{"title":"Retail Boutique","desc":"A contemporary boutique arrangement with clear product zones and fitting flow.","focus":"Let the entrance present the collection, then guide discovery through displays.","materials":"Display racks · island tables · mirrors · storage"},"zh":{"title":"精品服装店","desc":"分区清晰、试衣动线顺畅的现代精品服装店概念。","focus":"用入口主陈列吸引注意，再引导顾客浏览不同货架。","materials":"展示架 · 中岛台 · 镜面 · 仓储"}},{"cat":"com","en":{"title":"Soft Pink Beauty Salon","desc":"An inviting beauty-studio look with soft pink details and orderly workstations.","focus":"Balance welcoming appearance with sufficient working and cleaning space.","materials":"Salon chairs · mirrors · reception desk · shelving"},"zh":{"title":"柔粉色美容沙龙","desc":"以柔粉色细节与整洁工位打造亲切的美容空间。","focus":"兼顾舒适氛围、操作空间与卫生清洁需求。","materials":"美发椅 · 镜面 · 前台 · 层架"}},{"cat":"com","en":{"title":"Furniture Showroom","desc":"A display environment comparing sofa, chair and table arrangements by lifestyle.","focus":"Use complete room vignettes to show furniture scale and combinations.","materials":"Sofas · lounge chairs · cabinets · coffee tables"},"zh":{"title":"家具展示空间","desc":"按生活场景组合展示沙发、椅子和桌子的家具空间。","focus":"以完整生活场景帮助客户理解家具尺寸与搭配方式。","materials":"沙发 · 单椅 · 展示柜 · 茶几"}},{"cat":"res","en":{"title":"Small Studio Apartment","desc":"A small-space living idea using multi-purpose furniture and bright finishes.","focus":"Protect circulation and storage without overloading the room.","materials":"Convertible sofa · dining nook · tall storage"},"zh":{"title":"小户型单间公寓","desc":"借助多功能家具和明亮材料优化小户型空间。","focus":"保持通行和收纳能力，避免家具过度拥挤。","materials":"多功能沙发 · 小餐桌 · 高柜收纳"}},{"cat":"com","en":{"title":"Contemporary Restaurant","desc":"A dining concept with warm timber, greenery and varied table groupings.","focus":"Create a clear guest route while balancing privacy and seat efficiency.","materials":"Dining tables · banquettes · dividers · pendants"},"zh":{"title":"现代氛围餐厅","desc":"以暖木色、绿植与多种桌椅组合打造餐饮空间。","focus":"在清晰顾客动线、私密性和座位效率间取得平衡。","materials":"餐桌椅 · 卡座 · 隔断 · 吊灯"}}];
-const interiorCopy = {"en":{"nav":"3D Interior","kicker":"NEW / 3D INTERIOR & SPACE IDEAS","eyebrow":"07 / Concept portfolio","title1":"Different spaces.","title2":"Different ideas.","intro":"A growing gallery of ten illustrative interior concepts covering homes, furniture, cafés, retail and salons. Explore each style, intended spatial use and furniture plan.","jumpGallery":"Explore 10 concepts ↗","jumpPresent":"Interview presentation ↗","jumpFeedback":"Leave feedback ↗","disclosureLabel":"Concept/illustration notice:","disclosure":"These are AI-generated visual studies prepared for a portfolio demonstration, not proof of personally completed 3D models, commissioned client work, or construction projects.","all":"All 10 concepts","res":"Residential","com":"Commercial","grow":"Additional original design work can replace these sample concept visuals as it becomes available.","presentation":"How I present design ideas","presentIntro":"A simple explanation framework for interviews and conversations. It describes the design approach, not completed professional commissions.","s1":"Purpose: Who will use this space, and what does it need?","s2":"Layout: How will people move through it?","s3":"Style: Which materials, colors and mood fit?","s4":"Furniture: What seating, storage and lighting are practical?","s5":"Presentation: Show visual concept, trade-offs and next steps.","sampleLabel":"Interview introduction (sample)","sampleSpeak":"“These are interior concept studies illustrating different moods and space-planning ideas. I would begin by listening to the client’s needs, then discuss layout, furniture, materials and visual direction. I’m continuing to build practical 3D design skills.”","reelNote":"Animated concept-image reel for presentation. This is not a rendered 3D walkthrough or footage of a real project.","feedbackTitle":"Feedback & collaboration","feedbackIntro":"Have a design suggestion or a job opportunity? Share your thoughts below.","name":"Your name","email":"Your email (optional)","topic":"Feedback topic","message":"Your message","send":"Prepare email feedback ↗","mailtoNote":"This opens your email app with a drafted message. The website does not save feedback or send it automatically."},"zh":{"nav":"室内设计概念","kicker":"新增 / 室内与空间设计概念","eyebrow":"07 / 概念作品集","title1":"不同空间，","title2":"不同构想。","intro":"十组室内空间概念示意，涵盖住宅、家具、咖啡馆、零售店和美容空间。可查看风格、空间使用思路与家具建议。","jumpGallery":"查看十个概念 ↗","jumpPresent":"面试介绍思路 ↗","jumpFeedback":"提出反馈 ↗","disclosureLabel":"概念作品说明：","disclosure":"以下图片为 AI 生成的作品集示意概念，不代表本人已完成的三维建模、正式客户委托或实际施工项目。","all":"全部十个概念","res":"住宅空间","com":"商业空间","grow":"后续可用本人独立完成的原创设计作品替换这些示例图片。","presentation":"面试时如何介绍设计思路","presentIntro":"这是用于面试交流的简单表达框架，不能当作已完成客户项目的经历介绍。","s1":"需求：谁会使用这个空间？主要需求是什么？","s2":"布局：人员动线与功能分区怎么安排？","s3":"风格：什么材料、色彩与氛围更合适？","s4":"家具：哪些座椅、收纳与照明更实用？","s5":"展示：说明概念、取舍与下一步方案。","sampleLabel":"面试介绍参考","sampleSpeak":"“这些是室内设计概念练习，展示不同风格和空间规划思路。如果与客户沟通，我会先了解需求，再讨论布局、家具、材料和整体视觉方向。目前也在持续提升自己的三维设计实操能力。”","reelNote":"此视频是由概念图片制作的动态展示，不是真实三维漫游动画或实际工程拍摄。","feedbackTitle":"反馈与合作","feedbackIntro":"如果您有设计建议或招聘合作机会，欢迎留言交流。","name":"您的称呼","email":"您的邮箱（选填）","topic":"反馈主题","message":"留言内容","send":"通过邮箱发送反馈 ↗","mailtoNote":"点击后会打开您的邮件应用并生成草稿。网站本身不会保存或自动发送留言。"}};
-function refreshInteriorText(lang){
- const copy=interiorCopy[lang]||interiorCopy.en;
- document.querySelectorAll('[data-ic]').forEach(el=>{let val=copy[el.dataset.ic];if(val)el.textContent=val;});
- document.querySelectorAll('[data-ic-title]').forEach(el=>{el.textContent=interiorProjects[+el.dataset.icTitle][lang].title;});
- document.querySelectorAll('[data-ic-desc]').forEach(el=>{el.textContent=interiorProjects[+el.dataset.icDesc][lang].desc;});
- document.querySelectorAll('[data-ic-kind]').forEach(el=>{el.textContent=interiorProjects[+el.dataset.icKind].cat==='res'?copy.res:copy.com;});
- document.querySelectorAll('.int-open').forEach(el=>{el.textContent=lang==='zh'?'查看概念详情 ↗':'View project concept ↗';});
- const d=document.getElementById('intDialog'); if(d.open){d.close();}
-}
-refreshInteriorText('en');
-document.getElementById('lang').addEventListener('click',()=>refreshInteriorText(language));
-document.querySelectorAll('.int-filter').forEach(btn=>btn.addEventListener('click',()=>{
- document.querySelectorAll('.int-filter').forEach(x=>x.setAttribute('aria-pressed',String(x===btn)));
- const cat=btn.dataset.show;
- document.querySelectorAll('.int-card').forEach(el=>el.hidden=cat!=='all'&&el.dataset.type!==cat);
-}));
-const intDlg=document.getElementById('intDialog');
-document.querySelectorAll('.int-open').forEach(button=>button.addEventListener('click',()=>{
- const i=Number(button.dataset.intid), info=interiorProjects[i][language];
- document.getElementById('intDlgTitle').textContent=info.title;
- document.getElementById('intDlgImg').src='assets/interior/concept-'+String(i+1).padStart(2,'0')+'.webp';
- document.getElementById('intDlgImg').alt='Illustrative AI concept visual: '+info.title;
- document.getElementById('intDt1').textContent=language==='zh'?'设计构想':'Concept goal';
- document.getElementById('intDt2').textContent=language==='zh'?'空间规划思路':'Space planning idea';
- document.getElementById('intDt3').textContent=language==='zh'?'家具与材料建议':'Furniture & materials';
- document.getElementById('intDd1').textContent=info.desc;
- document.getElementById('intDd2').textContent=info.focus;
- document.getElementById('intDd3').textContent=info.materials;
- document.getElementById('intDlgNote').textContent=language==='zh'?'AI 生成的概念示意图，并非本人完成的真实客户项目。':'AI-generated concept imagery for presentation, not completed client work.';
- intDlg.showModal();
-}));
-document.getElementById('intClose').addEventListener('click',()=>intDlg.close());
-intDlg.addEventListener('click',e=>{if(e.target===intDlg)intDlg.close()});
-document.getElementById('intFeedbackForm').addEventListener('submit',event=>{
- event.preventDefault();
- const name=document.getElementById('intName').value.trim();
- const email=document.getElementById('intEmail').value.trim();
- const topic=document.getElementById('intTopic').value;
- const msg=document.getElementById('intMessage').value.trim();
- if(!name||!msg)return;
- const subject=encodeURIComponent('[Portfolio] '+topic);
- const body=encodeURIComponent('From: '+name+'\nReply email: '+(email||'Not provided')+'\nTopic: '+topic+'\n\n'+msg+'\n\nSent from the portfolio mailto form.');
- window.location.href='mailto:Hinfelix99@gmail.com?subject='+subject+'&body='+body;
-});
+    <section class="work-section" id="work">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="section-number">01 / <span data-i18n="workLabel">SELECTED WORK</span></p>
+          <h2><span data-i18n="workTitle1">Small projects.</span><br><em data-i18n="workTitle2">Real, inspectable output.</em></h2>
+          <p data-i18n="workIntro">The web project below is a personal learning project, not client work. The Excel downloads are practice samples using invented data. Each item is labeled clearly so you can judge the work for yourself.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">All work</button><button class="filter" type="button" data-filter="web" data-i18n="filterWeb">Web & IT</button><button class="filter" type="button" data-filter="excel">Excel</button><button class="filter" type="button" data-filter="creative" data-i18n="filterCreative">Creative</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card featured reveal" data-category="web">
+            <div class="project-visual web-visual" aria-hidden="true"><div class="mini-window"><div class="mini-top"><span></span><span></span><span></span></div><div class="mini-page"><i></i><strong>PORTFOLIO</strong><b></b><b></b><b></b></div></div><span class="visual-chip chip-html">HTML</span><span class="visual-chip chip-css">CSS</span><span class="visual-chip chip-js">JS</span></div>
+            <div class="project-info">
+              <div class="project-meta"><span>01 / WEB</span><span data-i18n="personalProject">PERSONAL PROJECT</span></div><h3 data-i18n="webProjectTitle">Portfolio Website</h3>
+              <p data-i18n="webProjectDesc">A responsive static portfolio built with semantic HTML, modern CSS and vanilla JavaScript, then deployed with GitHub Pages. It includes bilingual content, project filters, accessible dialogs and reduced-motion support.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+              <div class="project-links"><a href="https://hinfelix2001.github.io/hin-sothun-portfolio/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewLive">View live site</span> ↗</a><a href="https://github.com/hinfelix2001/hin-sothun-portfolio" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSource">View source</span> ↗</a></div>
+            </div>
+          </article>
 
+          <article class="project-card reveal" data-category="excel">
+            <div class="project-visual sheet-visual cashbook" aria-hidden="true"><span>01</span><div class="sheet-lines"></div><strong>Σ</strong></div>
+            <div class="project-info"><div class="project-meta"><span>02 / XLSX</span><span data-i18n="practiceSample">PRACTICE SAMPLE</span></div><h3 data-i18n="cashbookTitle">Cashbook & Cash Tracking</h3><p data-i18n="cashbookDesc">Cash receipts, outgoing payments, running balances and categorized reporting for daily record control.</p><div class="project-links"><button type="button" data-preview="cashbook"><span data-i18n="preview">Preview</span> ↗</button><a href="files/01_Cashbook.xlsx" download><span data-i18n="download">Download</span> ↓</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="excel">
+            <div class="project-visual sheet-visual receivable" aria-hidden="true"><span>02</span><div class="sheet-lines"></div><strong>↳</strong></div>
+            <div class="project-info"><div class="project-meta"><span>03 / XLSX</span><span data-i18n="practiceSample">PRACTICE SAMPLE</span></div><h3 data-i18n="arTitle">Accounts Receivable Tracker</h3><p data-i18n="arDesc">Invoice records, payment matching, open balances and aging views for collection follow-up practice.</p><div class="project-links"><button type="button" data-preview="ar"><span data-i18n="preview">Preview</span> ↗</button><a href="files/02_Accounts_Receivable.xlsx" download><span data-i18n="download">Download</span> ↓</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="excel">
+            <div class="project-visual sheet-visual payable" aria-hidden="true"><span>03</span><div class="sheet-lines"></div><strong>⇄</strong></div>
+            <div class="project-info"><div class="project-meta"><span>04 / XLSX</span><span data-i18n="practiceSample">PRACTICE SAMPLE</span></div><h3 data-i18n="apTitle">Accounts Payable Register</h3><p data-i18n="apDesc">Supplier bill records, approval tracking, due-date monitoring and payment allocation with linked references.</p><div class="project-links"><button type="button" data-preview="ap"><span data-i18n="preview">Preview</span> ↗</button><a href="files/03_Accounts_Payable.xlsx" download><span data-i18n="download">Download</span> ↓</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="excel">
+            <div class="project-visual sheet-visual bank" aria-hidden="true"><span>04</span><div class="sheet-lines"></div><strong>≋</strong></div>
+            <div class="project-info"><div class="project-meta"><span>05 / XLSX</span><span data-i18n="practiceSample">PRACTICE SAMPLE</span></div><h3 data-i18n="bankTitle">Bank Reconciliation</h3><p data-i18n="bankDesc">A comparison of bank records with internal cashbook transactions to identify unmatched items.</p><div class="project-links"><button type="button" data-preview="bank"><span data-i18n="preview">Preview</span> ↗</button><a href="files/04_Bank_Reconciliation.xlsx" download><span data-i18n="download">Download</span> ↓</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="creative">
+            <div class="project-visual video-visual" aria-hidden="true"><div class="play">▶</div><div class="timeline-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="project-info"><div class="project-meta"><span>06 / VIDEO</span><span data-i18n="creativePortfolio">CREATIVE PORTFOLIO</span></div><h3 data-i18n="videoTitle">Video Editing & Digital Content</h3><p data-i18n="videoDesc">Selected editing, promotional visuals and digital content work presented in a separate portfolio.</p><div class="project-links"><a href="https://hin-sothun-video-editor.hinfelix99.chatgpt.site/" target="_blank" rel="noopener noreferrer"><span data-i18n="openVideo">Open video portfolio</span> ↗</a></div></div>
+          </article>
+        </div>
+        <p class="disclosure reveal" data-i18n="workDisclosure">Transparency note: the website is a personal learning project. The four Excel files are independently prepared practice samples using invented companies, people and transactions—not employer or client results.</p>
+      </div>
+    </section>
 
+    <section class="capabilities-section" id="capabilities">
+      <div class="section-shell">
+        <div class="section-heading split-heading reveal">
+          <div><p class="section-number">02 / <span data-i18n="capLabel">CAPABILITIES</span></p><h2><span data-i18n="capTitle1">A digital learner with</span><br><em data-i18n="capTitle2">operational discipline.</em></h2></div>
+          <p data-i18n="capIntro">My IT direction is grounded in hands-on personal work. My professional strengths come from careful operations: checking details, organizing data, following up and communicating progress.</p>
+        </div>
+        <div class="capability-list">
+          <article class="capability reveal"><span class="cap-number">01</span><div><h3 data-i18n="capWeb">Web foundations</h3><p data-i18n="capWebDesc">Semantic HTML, responsive CSS, JavaScript interactions, browser testing and GitHub Pages deployment at a personal-project level.</p></div><div class="cap-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span></div></article>
+          <article class="capability reveal"><span class="cap-number">02</span><div><h3 data-i18n="capData">Data & Excel support</h3><p data-i18n="capDataDesc">Structured records, formulas, data checking, simple reconciliation workflows and clear summaries.</p></div><div class="cap-pills"><span>Excel</span><span>Data entry</span><span>Reporting</span></div></article>
+          <article class="capability reveal"><span class="cap-number">03</span><div><h3 data-i18n="capOps">Operations & coordination</h3><p data-i18n="capOpsDesc">Task coordination, transaction checks, pending-issue follow-up and daily progress communication.</p></div><div class="cap-pills"><span>Accuracy</span><span>Follow-up</span><span>Teamwork</span></div></article>
+          <article class="capability reveal"><span class="cap-number">04</span><div><h3 data-i18n="capCreative">Creative digital work</h3><p data-i18n="capCreativeDesc">Video editing, promotional visuals, content organization and a practical eye for presentation.</p></div><div class="cap-pills"><span>Video</span><span>Visuals</span><span>Content</span></div></article>
+        </div>
+      </div>
+    </section>
 
-/* === Version 3: lightweight scroll/hover animations === */
-(function initPortfolioMotion(){
- const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
- const progress = document.getElementById('readingProgress');
- const header = document.querySelector('header');
- const scrollLinks = document.querySelectorAll('.navlinks a[href^="#"]');
- let ticking = false;
- const onScroll = () => {
-   if(ticking)return;
-   ticking=true;
-   requestAnimationFrame(()=>{
-     const max = document.documentElement.scrollHeight - window.innerHeight;
-     if(progress)progress.style.width=(max>0 ? (scrollY/max)*100 : 0).toFixed(2)+'%';
-     header?.classList.toggle('is-scrolled',scrollY>24);
-     ticking=false;
-   });
- };
- window.addEventListener('scroll',onScroll,{passive:true});onScroll();
- if(!reduced.matches && 'IntersectionObserver' in window){
-   const selector=['.hero .eyebrow','.hero .nameplate','.hero h1','.hero .lead',
-     '.hero .hero-actions','.hero .hero-pills','.trust-item','.section-top > *',
-     '.cards > .card','.int-card','.int-extras > .int-box','.about-grid > *',
-     '.workflow > *','.contact .wrap > *','.int-section-top > *'];
-   const nodes=[...document.querySelectorAll(selector.join(','))];
-   nodes.forEach((el,index)=>{
-     if(el.closest('[hidden]'))return;
-     el.classList.add('motion-reveal');
-     const siblings=[...el.parentElement.children].filter(x=>nodes.includes(x));
-     const n=siblings.indexOf(el);
-     el.style.setProperty('--motion-delay',Math.min(Math.max(n,0),4)*75+'ms');
-   });
-   // Prepare visible UI before observing; blank content is not left behind if IO is unavailable.
-   document.documentElement.classList.add('motion-ready');
-   const observer=new IntersectionObserver(entries=>{
-     entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('motion-visible');observer.unobserve(entry.target)}});
-   },{threshold:.08,rootMargin:'0px 0px 30px 0px'});
-   nodes.forEach(el=>observer.observe(el));
-   // Filtered cards might be hidden when they first enter; show immediately once unhidden.
-   document.querySelectorAll('.filter,.int-filter').forEach(btn=>btn.addEventListener('click',()=>{
-     requestAnimationFrame(()=>document.querySelectorAll('.motion-reveal').forEach(el=>{
-       if(el.getBoundingClientRect().height && el.getBoundingClientRect().top < window.innerHeight + 20){el.classList.add('motion-visible')}
-     }));
-   }));
- }
- // Card glows follow mouse, but never on touch-only devices.
- if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
-   document.querySelectorAll('.card,.int-card').forEach(card=>{
-     card.addEventListener('pointermove',event=>{
-       const bounds=card.getBoundingClientRect();
-       card.style.setProperty('--pointer-x',((event.clientX-bounds.left)/bounds.width*100).toFixed(1)+'%');
-       card.style.setProperty('--pointer-y',((event.clientY-bounds.top)/bounds.height*100).toFixed(1)+'%');
-     },{passive:true});
-   });
- }
- if('IntersectionObserver' in window){
-   const sections=[...document.querySelectorAll('section[id]')];
-   const sectionObserver=new IntersectionObserver(entries=>{
-     entries.forEach(e=>{if(e.isIntersecting){
-       const id=e.target.id;
-       scrollLinks.forEach(a=>a.getAttribute('href')==='#'+id ? a.setAttribute('aria-current','location') : a.removeAttribute('aria-current'));
-     }});
-   },{rootMargin:'-20% 0px -60% 0px'});
-   sections.forEach(s=>sectionObserver.observe(s));
- }
-})();
+    <section class="background-section" id="background">
+      <div class="section-shell background-grid">
+        <div class="background-copy reveal"><p class="section-number">03 / <span data-i18n="backgroundLabel">BACKGROUND</span></p><h2><span data-i18n="backgroundTitle1">What I have done.</span><br><em data-i18n="backgroundTitle2">What I am building toward.</em></h2><p data-i18n="backgroundIntro">I do not present operations experience as software engineering experience. Instead, I bring its habits—accuracy, ownership and clear follow-up—into my transition toward IT and web work.</p><a class="text-link" href="https://www.linkedin.com/in/hin-sothun-a58b66263/" target="_blank" rel="noopener noreferrer"><span data-i18n="linkedInProfile">View work profile on LinkedIn</span> ↗</a></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>NOW</span><div><h3 data-i18n="timelineWeb">Front-end web learning</h3><p data-i18n="timelineWebDesc">Building and improving personal websites with HTML, CSS, JavaScript, responsive layouts and GitHub Pages.</p></div></article>
+          <article class="timeline-item reveal"><span data-i18n="experience">EXPERIENCE</span><div><h3 data-i18n="timelineOps">Payment operations & team support</h3><p data-i18n="timelineOpsDesc">Coordinating daily assignments, checking transaction records, following up pending or failed payments and reporting updates.</p></div></article>
+          <article class="timeline-item reveal"><span data-i18n="practice">PRACTICE</span><div><h3 data-i18n="timelineExcel">Excel & data workflows</h3><p data-i18n="timelineExcelDesc">Creating practice workbooks for cash tracking, receivables, payables and bank reconciliation using synthetic data.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-</script>
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-inner reveal"><p class="section-number">04 / <span data-i18n="contactLabel">LET'S CONNECT</span></p><h2><span data-i18n="contactTitle1">Looking for a careful learner</span><br><em data-i18n="contactTitle2">for your digital team?</em></h2><p data-i18n="contactIntro">I am based in Phnom Penh and open to entry-level IT, web support, digital operations, data and related opportunities where I can contribute and keep developing.</p><div class="contact-links"><a class="contact-primary" href="mailto:Hinfelix99@gmail.com?subject=Opportunity%20for%20Han%20Jingchen"><span data-i18n="emailMe">Email me</span><b>↗</b></a><a href="https://www.linkedin.com/in/hin-sothun-a58b66263/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://t.me/hansuteng118" target="_blank" rel="noopener noreferrer">Telegram ↗</a></div></div>
+      <div class="contact-orbit" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-shell footer-inner"><div><strong>韩景宸</strong><span>Han Jingchen / Hin Sothun</span></div><p>© 2026 · Phnom Penh, Cambodia</p><a href="#top"><span data-i18n="backTop">Back to top</span> ↑</a></div></footer>
+
+  <dialog class="preview-dialog" id="previewDialog" aria-labelledby="previewTitle"><div class="dialog-inner"><div class="dialog-head"><div><p data-i18n="dialogLabel">EXCEL PRACTICE SAMPLE</p><h2 id="previewTitle"></h2></div><button class="dialog-close" id="dialogClose" type="button" aria-label="Close preview">×</button></div><p class="dialog-note" data-i18n="dialogNote">This is a compact preview. Download the workbook to inspect the records, formulas and charts. All names and transactions are invented.</p><div class="table-wrap"><table><thead id="previewHead"></thead><tbody id="previewBody"></tbody></table></div><div class="dialog-actions"><a class="button button-dark" id="dialogDownload" download><span data-i18n="downloadWorkbook">Download workbook</span> ↓</a><button class="button button-line" id="dialogCloseSecondary" type="button" data-i18n="close">Close</button></div></div></dialog>
+  <script src="script.js"></script>
 </body>
 </html>

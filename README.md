@@ -1,43 +1,37 @@
-# 韩景宸 (Han Jingchen) / Hin Sothun | Professional Portfolio
+# 韩景宸 | Han Jingchen | Hin Sothun — Portfolio
 
-An updated bilingual (English / 简体中文) professional website. It preserves the original Accounting & Excel, Payment Operations and Video Editing sections, with a **new 3D Interior Concept Portfolio** tab.
+A clean, responsive personal portfolio focused on front-end web learning, practical digital work and an honest presentation of professional strengths.
 
-## What is new
+## What this site includes
 
-- 10 clearly differentiated illustrative interior concept cards: condo, bedroom, kitchen, office, café, boutique, beauty salon, furniture showroom, studio, restaurant.
-- AI-generated concept images, presented transparently as *illustrative studies*, not as completed client projects or proof of original 3D modeling.
-- Individual concept detail views covering space planning, furniture, and materials.
-- A short moving-image concept slideshow MP4: **not a true 3D walkthrough**.
-- Interview talking points in English and Simplified Chinese.
-- Feedback form via `mailto:`; it requires an email application and does **not** store submissions in a database.
-- Responsive design including a visible Interior shortcut on mobile.
+- A personal front-end project built with semantic HTML, modern CSS and vanilla JavaScript.
+- English and Simplified Chinese content.
+- Responsive navigation, animated sections, project filters and accessible Excel preview dialogs.
+- Reduced-motion support for visitors who prefer less animation.
+- Four downloadable Accounting / Excel practice samples:
+  - Cashbook & Cash Tracking
+  - Accounts Receivable Tracker
+  - Accounts Payable Register
+  - Bank Reconciliation
+- A link to the separate Video Editing & Digital Content portfolio.
 
-## Update the EXISTING site (do not make a new repository)
+## Transparency
 
-1. Open: https://github.com/hinfelix2001/hin-sothun-portfolio
-2. Download the ZIP and extract it on your computer.
-3. In the existing GitHub repository, select **Add file -> Upload files**.
-4. Drag **all extracted contents** (not the ZIP file) including `index.html`, `assets/`, `files/`, `.nojekyll` and `README.md` to the upload box.
-5. GitHub may ask to overwrite or replace existing files; commit all changes to the `main` branch. Confirm `index.html` remains at repository root.
-6. GitHub Pages is already configured for `main` and `/(root)`. Once deployment completes, visit https://hinfelix2001.github.io/hin-sothun-portfolio/
+The portfolio website is a personal learning project, not client work. The four Excel workbooks are independently prepared practice samples using invented companies, people and transactions. They demonstrate workflow and spreadsheet skills, not employer or client results.
 
-### Optional simpler update
+The site describes verified payment-operations, Excel/data and team-coordination experience separately from personal web learning. It does not claim professional software engineering experience.
 
-Only `index.html` and the `assets/interior/` directory are new/changed relative to the previous portfolio. The original four Excel workbooks can stay unchanged if they're already correctly uploaded.
+## Files
 
-## Accurate attribution
+- `index.html` — semantic page structure and portfolio content
+- `styles.css` — responsive visual system and motion
+- `script.js` — language switcher, filters, dialogs, scroll effects and interactions
+- `files/` — four downloadable Excel practice samples
 
-Illustrative imagery originates from AI-generated draft concept visuals. Replace them with your personally created Blender, SketchUp, CAD, or rendering work once available. The website must not imply an employment track record in architecture/design unless supported by evidence.
+## Deployment
 
-© 2026 Han Jingchen (韩景宸) / Hin Sothun.
+This repository is served with GitHub Pages:
 
+https://hinfelix2001.github.io/hin-sothun-portfolio/
 
-## Animation update (v3)
-
-The existing portfolio design and content are preserved. This version adds soft entrance transitions on scroll, restrained dashboard movement, bar chart reveals, image and card hover states, CTA button effects, and a subtle reading progress bar. Animations are built with CSS and vanilla JavaScript; no external dependency is needed. The site honors `prefers-reduced-motion` for accessibility and works on desktop and mobile.
-
-### Update the existing GitHub Pages repository
-
-Upload the *contents* of this extracted folder to the existing repository root (not the enclosing folder). Replace `index.html` and `README.md`; preserve all contents of `assets/interior/` and `files/`. Commit to `main`. Existing Pages settings `main` and `/(root)` should remain unchanged.
-
-Use the full ZIP for a complete safe replacement. Use the smaller UPDATE_ONLY ZIP when the Excel workbooks are already in the repository.
+© 2026 韩景宸 · Han Jingchen · Hin Sothun
