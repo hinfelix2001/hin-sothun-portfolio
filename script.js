@@ -117,8 +117,8 @@ function setLanguage(nextLanguage) {
   languageButton.textContent = language === "en" ? "中文" : "English";
   languageButton.setAttribute("aria-label", language === "en" ? "Switch to Chinese" : "切换到英文");
   document.title = language === "en"
-    ? "韩景宸 | Han Jingchen | Hin Sothun — Web & Digital Portfolio"
-    : "韩景宸 | Han Jingchen | Hin Sothun — 网站与数字作品集";
+    ? "韩景宸 | Han Jingchen | Hin Sothun | Felix — Web & Digital Portfolio"
+    : "韩景宸 | Han Jingchen | Hin Sothun | Felix — 网站与数字作品集";
   localStorage.setItem("portfolioLanguage", language);
 }
 

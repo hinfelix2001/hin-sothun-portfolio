@@ -1,4 +1,4 @@
-# 韩景宸 | Han Jingchen | Hin Sothun — Portfolio
+# 韩景宸 | Han Jingchen | Hin Sothun | Felix — Portfolio
 
 A clean, responsive personal portfolio focused on front-end web learning, practical digital work and an honest presentation of professional strengths.
 
@@ -41,4 +41,4 @@ This repository is served with GitHub Pages:
 
 https://hinfelix2001.github.io/hin-sothun-portfolio/
 
-© 2026 韩景宸 · Han Jingchen · Hin Sothun
+© 2026 韩景宸 · Han Jingchen · Hin Sothun · Felix
